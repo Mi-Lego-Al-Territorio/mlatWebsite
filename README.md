@@ -12,6 +12,7 @@ The following is the documentation for the development of the website of Politec
 - [HUGO layouts needed](#hugo-layouts-needed)
 - [Partials needed](#partials-needed)
 - [Configuration parameters needed](#configuration-parameters-needed)
+- [Sass structure](#sass-structure)
 - [Deployement](#deployement)
 - [Automation](#automation)
 - [Implementation path](#implementation-path)
@@ -27,11 +28,10 @@ The following is the documentation for the development of the website of Politec
 
 ## Glossary
 
-| acronym | meaning                |
-| ------- | ---------------------- |
-| ds      | stands for desktop     |
-| mb      | stand for mobile       |
-| FA      | stand for Font Awesome |
+| acronym | meaning            |
+| ------- | ------------------ |
+| ds      | stands for desktop |
+| mb      | stand for mobile   |
 
 ## General page structure
 
@@ -225,7 +225,7 @@ Once the website will need a back-end feature will evaluate different options, f
 
 ## Implementation path
 
-- [ ] write documentations
+- [ ] write documentation
 - [ ] hugo base setup
 - [ ] base template (header, menu, footer)
 - [ ] deploy to fake url
