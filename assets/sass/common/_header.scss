@@ -1,0 +1,69 @@
+header {
+  @include header-common;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  #menu-toggle:checked ~ & {
+    @media screen and (max-width: 600px) {
+      background-color: $color-fill;
+    }
+  }
+  a {
+    margin-left: $menu-icons-width + 30px;
+    h1 {
+      position: relative;
+      top: 4px;
+      color: $color-title;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+
+.header-shadow {
+  @include header-common;
+  box-shadow: $header-shadow;
+  z-index: 0;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+#menu-toggle {
+  opacity: 0;
+  position: absolute;
+}
+
+label[for='menu-toggle'] {
+  z-index: 2;
+  position: fixed;
+  top: ($header-height/2)- ($ham-line-height * 3 + $ham-margin-top-bottom * 4) /
+    2;
+  left: $menu-icons-width/2 -$ham-width/2;
+  display: inline-block;
+  cursor: pointer;
+  span {
+    display: block;
+    width: $ham-width;
+    height: $ham-line-height;
+    margin: $ham-margin-top-bottom 0px;
+    position: relative;
+    background: $color-link;
+    border-radius: 5px;
+    transition: $menu-transtion-time;
+
+    #menu-toggle:checked ~ &:nth-child(1) {
+      transform: translateY($ham-line-height + $ham-margin-top-bottom)
+        rotateZ(45deg);
+    }
+    #menu-toggle:checked ~ &:nth-child(2) {
+      opacity: 0;
+    }
+    #menu-toggle:checked ~ &:nth-child(3) {
+      transform: translateY(-$ham-line-height - $ham-margin-top-bottom)
+        rotateZ(-45deg);
+    }
+  }
+}

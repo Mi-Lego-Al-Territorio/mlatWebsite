@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{ $style := resources.Get "sass/base.scss" | resources.ToCSS}}
+    <link
+      href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="{{$style.Permalink}}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="flaticon/flaticon.css" />
+    <script
+      src="https://kit.fontawesome.com/d1e9081e05.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
+  </head>
+  <body>
+    <div class="header-shadow"></div>
+    <input type="checkbox" id="menu-toggle" />
+    <header>
+      <a href="/"><h1>{{$.Site.Title}}</h1> </a>
+    </header>
+    <div id="overlay"></div>
+    <label for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="menu">
+      <div class="menu-icons">
+        {{range $.Site.Menus.main}}
+        <a href="/{{.Name}}"><i class="{{.Pre}}"></i> </a>{{end}}
+      </div>
+      <div class="menu-names">
+        {{range $.Site.Menus.main}}
+        <a href="/{{.Name}}"><h2>{{.Name}}</h2></a>{{end}}
+      </div>
+    </div>
+    <main>
+      <!-- <img
+        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPGc+CiAgICAgIDxwYXRoIGQ9Im01MS41LDM5OC41YzEuMS01LjkgMTIuNy0xNC42IDM1LjQtMTkuNyA1MS4xLTExLjUgMTA0LjEtOC4xIDE2MC4zLTQuNiAyMy4xLDEuNSA4OS40LDcuOCAxMzctMi4zIDM4LjktOC4zIDY5LjktMzEuNyA5Ny40LTUxLjMgOS4yLTYuNiAxMS4zLTE5LjMgNC43LTI4LjUtNi42LTkuMi0xOS4zLTExLjMtMjguNS00LjgtNy40LDUuMy0xNC45LDEwLjYtMjIuNSwxNS43di03M2g0NS40YzkuMSwwIDE3LjEtNiAxOS42LTE0LjcgMi41LTguNy0xLTE4LTguNi0yMi45bC0yMjQuNy0xNDMuN2MtNi43LTQuMy0xNS4zLTQuMy0yMi0xLjQyMTA5ZS0xNGwtMjI0LjYsMTQzLjdjLTcuNiw0LjktMTEuMSwxNC4yLTguNiwyMi45IDIuNiw4LjcgMTAuNiwxNC43IDE5LjYsMTQuN2g0NS40djEwOS4zYy0zNy41LDguNy02MC43LDI3LTY1LjQsNTEuNi0yLjEsMTEuMSA1LjIsMjEuNiAxNi4yLDIzLjkgMTIuMSwyLjQgMjItNi41IDIzLjktMTYuM3ptMzQyLjktNzIuOGMtNi41LDIuNy0xMy4xLDQuOC0yMCw2LjYtMzQuMyw4LjctMTAyLjEsMi43LTEyNC43LDEuMy00My40LTIuNy04OC01LjYtMTMyLjEtMC45di0xMDIuN2gyNzYuOHY5NS43em0tMTM4LjQtMjM1LjVsMTU0LjgsOTloLTMwOS42bDE1NC44LTk5eiIgZmlsbD0iIzAwMDAwMCIvPgogICAgICA8cGF0aCBkPSJtNDk3LjIsMzc4Yy02LjYtOS4yLTE5LjMtMTEuMy0yOC41LTQuOC0yNS43LDE4LjQtNTMuMiwzNC40LTgzLjMsNDQuOS0yMy42LDguMi0xMDIuMSwyLjctMTI0LjcsMS4zLTU2LjUtMy42LTExNS03LjMtMTcxLjksNS41LTM4LjEsOC42LTYxLjcsMjctNjYuNSw1MS44LTIuMSwxMS4xIDUuMiwyMS42IDE2LjIsMjMuOSAxMS41LDIuNCAyMS41LTUuNCAyMy45LTE2LjIgMS4zLTUuOSAxMi43LTE0LjYgMzUuMy0xOS43IDUxLjItMTEuNSAxMDQuMi04LjEgMTYwLjMtNC42IDIzLjEsMS41IDEwNC4xLDcuMyAxMzYuOS0yLjMgNDEuOC0xMi4zIDY5LjktMzEuNyA5Ny40LTUxLjMgOS4zLTYuNiAxMS40LTE5LjMgNC45LTI4LjV6IiBmaWxsPSIjMDAwMDAwIi8+CiAgICAgIDxwYXRoIGQ9Ik02Ni4zLDExNi4yYzExLjMsMCwyMC40LTkuMSwyMC40LTIwLjRWNzUuNGMwLTExLjMtOS4xLTIwLjQtMjAuNC0yMC40cy0yMC40LDkuMS0yMC40LDIwLjR2MjAuNCAgICBDNDUuOSwxMDcsNTUsMTE2LjIsNjYuMywxMTYuMnoiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTE1OS43LDcyLjJjMTEuMywwIDIwLjQtOS4xIDIwLjQtMjAuNHYtMjAuNGMwLTExLjMtOS4xLTIwLjQtMjAuNC0yMC40cy0yMC40LDkuMS0yMC40LDIwLjR2MjAuNGMtMC4xLDExLjMgOS4xLDIwLjQgMjAuNCwyMC40eiIgZmlsbD0iIzAwMDAwMCIvPgogICAgICA8cGF0aCBkPSJtMzQ5LjgsNzIuMmMxMS4zLDAgMjAuNC05LjEgMjAuNC0yMC40di0yMC40YzAtMTEuMy05LjEtMjAuNC0yMC40LTIwLjQtMTEuMywwLTIwLjQsOS4xLTIwLjQsMjAuNHYyMC40Yy01LjY4NDM0ZS0xNCwxMS4zIDkuMSwyMC40IDIwLjQsMjAuNHoiIGZpbGw9IiMwMDAwMDAiLz4KICAgICAgPHBhdGggZD0ibTQzNy44LDExNi4yYzExLjMsMCAyMC40LTkuMSAyMC40LTIwLjR2LTIwLjRjMC0xMS4zLTkuMS0yMC40LTIwLjQtMjAuNHMtMjAuNCw5LjEtMjAuNCwyMC40djIwLjRjLTUuNjg0MzRlLTE0LDExLjIgOS4yLDIwLjQgMjAuNCwyMC40eiIgZmlsbD0iIzAwMDAwMCIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg=="
+      /> -->
+      <div class="image"></div>
+      {{ block "title" . }}
+      <h1>{{.Page.Title}}</h1>
+      {{ end }} {{ block "content" . }}
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        perspiciatis repudiandae dolorem aspernatur vel unde assumenda, ad eaque
+        culpa ex veniam exercitationem nesciunt, enim laboriosam est odit
+        tempore animi, voluptatibus quis quos sint id! Consectetur, accusamus?
+        Officiis facere laudantium laboriosam commodi tempore, odit dolores,
+        itaque ab nisi veritatis ducimus illum ratione. Accusamus, dolore
+      </p>
+      {{ end }}
+    </main>
+
+    <footer>
+      <i class="flaticon-data"></i>
+      <h1>
+        {{ with .Param "mails"}} Curiosità? Scrivi a
+        <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+      </h1>
+      <i class="far fa-envelope" id="mail"></i>
+      <div id="socials">
+        {{with .Param "socials" }}{{range .}}<a href="{{.link}}" target="_blank"
+          ><i class="{{.icon}}"></i></a
+        >{{end}}{{end}}
+      </div>
+    </footer>
+  </body>
+</html>

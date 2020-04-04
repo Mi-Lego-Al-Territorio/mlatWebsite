@@ -1,0 +1,33 @@
+footer {
+  bottom: 0;
+  height: $footer-height;
+  background-color: $color-fill;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+  @include margin-shift-menu;
+  transition: $menu-transtion-time ease-out;
+  padding: 20px;
+  h1 {
+    font-size: 1.3rem;
+    color: $color-text;
+    a {
+      color: $color-link;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+  #mail {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: inline;
+    }
+  }
+}
+i {
+  color: $color-link;
+  font-size: 2.2rem;
+  margin: 0.5rem;
+}

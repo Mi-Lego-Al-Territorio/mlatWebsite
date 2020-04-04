@@ -1,0 +1,63 @@
+// light theme
+$color-bkg: #ffffff;
+$color-title: #e84040;
+$color-fill: #f8b10b;
+$color-fill-light: lighten($color-fill, 20%);
+$color-text: #292929;
+$color-link: #3953a1;
+$menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+$header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.25);
+
+// dark theme for fun
+// $color-bkg: #252525;
+// $color-title: #e84040;
+// $color-fill: #3953a1;
+// $color-fill-light: lighten($color-fill, 20%);
+// $color-text: #e4e4e4;
+// $color-link: #f8b10b;
+// $menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+// $header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.5);
+
+$header-height: 80px;
+$footer-height: 70px;
+
+$menu-icons-width: 65px;
+$menu-opened-width: 180px;
+
+$menu-transtion-time: 0.2s;
+
+$ham-width: 33px;
+$ham-margin-top-bottom: 6px;
+$ham-line-height: 4px;
+
+@mixin margin-shift-menu {
+  margin-left: $menu-icons-width;
+  transition: $menu-transtion-time ease-out;
+  width: calc(100% - #{$menu-icons-width});
+  #menu-toggle:checked ~ & {
+    width: calc(100% - #{$menu-opened-width});
+    margin-left: $menu-opened-width;
+    @media screen and (max-width: 600px) {
+      width: calc(100vw);
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    width: calc(100vw);
+    margin-left: 0;
+  }
+}
+
+@mixin header-common {
+  width: 100vw;
+  background-color: $color-bkg;
+  position: fixed;
+  top: 0;
+  height: $header-height;
+}
+
+@mixin distribute-vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

@@ -1,0 +1,15 @@
+{{define "content"}}
+
+<div class="info">
+  <p id="motto">
+    {{ with .Param "motto"}}{{.}}{{end}}
+  </p>
+  <h2>CHI SIAMO</h2>
+  {{ .Content }}
+</div>
+<div class="lastEvents">
+  <div>Event</div>
+  <div>Event</div>
+</div>
+
+{{end}}

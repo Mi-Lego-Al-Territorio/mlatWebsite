@@ -1,0 +1,7 @@
+baseURL: 'https://milegoalterritorio.it/'
+languageCode: 'it-IT'
+title: 'Mi Lego Al Territorio'
+defaultContentLanguage: it
+disableKinds:
+  - taxonomy
+  - taxonomyTerm

@@ -1,0 +1,30 @@
+.info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 20px;
+
+  p {
+    margin: 1.7rem 0;
+  }
+  #motto {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    @include media('<tablet') {
+      background-color: red;
+    }
+  }
+  h2 {
+    color: $color-fill;
+  }
+}
+
+.lastEvents {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  div {
+    text-align: center;
+  }
+}

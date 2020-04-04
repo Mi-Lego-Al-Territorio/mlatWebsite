@@ -1,0 +1,25 @@
+{{ define "content"}} {{ $groupName := "" }}
+<div class="team">
+  <div class="team-icons">
+    {{range .Resources}}
+    <div class="groupIcon">
+      <a href="#{{.File.BaseFileName}}">
+        <i class="{{.Params.icon}}"></i>
+        <h2>{{.File.BaseFileName}}</h2>
+      </a>
+    </div>
+    {{end}}
+  </div>
+  <div class="team-descriptions">
+    {{range .Resources}}
+    <div class="groupCard" id="{{.File.BaseFileName}}">
+      <i class="{{.Params.icon}}"></i>
+      <div class="group-info">
+        <h2>{{.File.BaseFileName}}</h2>
+        <p>{{.Content}}</p>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</div>
+{{end}}

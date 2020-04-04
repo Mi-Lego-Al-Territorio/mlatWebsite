@@ -1,0 +1,59 @@
+.team {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  i {
+    color: $color-fill;
+    font-size: 3.5rem;
+  }
+  &-icons {
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    margin: 0 0 120px 0;
+
+    .groupIcon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h2 {
+        margin-top: 5px;
+        color: $color-title;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &-descriptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 4%;
+    align-items: center;
+    .groupCard {
+      margin: 40px 0;
+      display: flex;
+      i {
+        flex: 1;
+        font-size: 6rem;
+        text-align: center;
+        margin-right: 40px;
+      }
+      .group-info {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h2 {
+        text-transform: capitalize;
+        color: $color-title;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
