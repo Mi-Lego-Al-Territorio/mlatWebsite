@@ -5,7 +5,7 @@ draft: true
 menu:
   main:
     identifier: progetti
-    pre: far fa-lightbulb
+    pre: project-management
     name: progetti
     weight: 2
 ---
