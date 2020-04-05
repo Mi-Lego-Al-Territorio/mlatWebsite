@@ -5,19 +5,20 @@ header {
   z-index: 2;
 
   #menu-toggle:checked ~ & {
-    @media screen and (max-width: 600px) {
+    @include media('<=phone') {
       background-color: $color-fill;
     }
   }
+
   a {
     margin-left: $menu-icons-width + 30px;
+    @include media('<=phone') {
+      display: none;
+    }
     h1 {
       position: relative;
       top: 4px;
       color: $color-title;
-    }
-    @media screen and (max-width: 600px) {
-      display: none;
     }
   }
 }
@@ -26,7 +27,7 @@ header {
   @include header-common;
   box-shadow: $header-shadow;
   z-index: 0;
-  @media screen and (max-width: 600px) {
+  @include media('<=phone') {
     display: none;
   }
 }

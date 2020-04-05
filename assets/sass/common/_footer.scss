@@ -12,16 +12,16 @@ footer {
   h1 {
     font-size: 1.3rem;
     color: $color-text;
+    @include media('<=phone') {
+      display: none;
+    }
     a {
       color: $color-link;
-    }
-    @media screen and (max-width: 600px) {
-      display: none;
     }
   }
   #mail {
     display: none;
-    @media screen and (max-width: 600px) {
+    @include media('<=phone') {
       display: inline;
     }
   }

@@ -10,9 +10,6 @@
   #motto {
     font-size: 1.8rem;
     margin-bottom: 3rem;
-    @include media('<tablet') {
-      background-color: red;
-    }
   }
   h2 {
     color: $color-fill;

@@ -27,9 +27,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 h1 {
   font-size: 2.4rem;
 }
+
 p {
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -40,6 +42,7 @@ a {
   text-decoration: none;
   color: $color-link;
 }
+
 main > img {
   color: red;
 }
