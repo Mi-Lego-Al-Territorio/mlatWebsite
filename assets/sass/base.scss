@@ -46,3 +46,8 @@ a {
 main > img {
   color: red;
 }
+
+// to hide body temporarly when setting menu open state
+.no-display {
+  display: none;
+}

@@ -19,9 +19,22 @@
 
     <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
   </head>
-  <body>
+  <body class="no-display">
     <div class="header-shadow"></div>
     <input type="checkbox" id="menu-toggle" />
+    <script>
+      // script to save menu state for better UX
+      const body = document.querySelector('body');
+      checkBox = document.getElementById('menu-toggle');
+      checkBox.checked = localStorage.getItem('mlatMenu') == 'open';
+      menuState = checkBox.checked ? 'open' : 'closed';
+      localStorage.setItem('mlatMenu', menuState);
+      checkBox.addEventListener('change', () => {
+        localStorage.setItem('mlatMenu', checkBox.checked ? 'open' : 'closed');
+      });
+      body.classList.remove('no-display');
+    </script>
+
     <header>
       <a href="/"><h1>{{$.Site.Title}}</h1> </a>
     </header>
