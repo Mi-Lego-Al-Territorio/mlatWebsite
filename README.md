@@ -24,7 +24,7 @@ The following is the documentation for the development of the website of Politec
 - The format to represent data is YAML
 - SASS is used instead of normal CSS
 - The design is desktop-first, since the more complicated front-end logic is on a wide screen layout
-- For icons it is used [Flaticon](https://www.flaticon.com/)
+- For icons it is used the Font Awesome CDN for social icons and [Flaticon](https://www.flaticon.com/) for more specific ones
 
 ## Glossary
 

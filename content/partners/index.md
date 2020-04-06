@@ -5,7 +5,7 @@ draft: true
 menu:
   main:
     identifier: partners
-    pre: fas fa-handshake
+    pre: partner
     name: partners
     weight: 5
 type: partners

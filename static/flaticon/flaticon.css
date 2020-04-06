@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 05/04/2020 21:18
+  	Creation date: 06/04/2020 20:28
   	*/
 
 @font-face {
@@ -34,3 +34,6 @@ margin-left: 20px;
 .flaticon-earthquake:before { content: "\f101"; }
 .flaticon-project-management:before { content: "\f102"; }
 .flaticon-team:before { content: "\f103"; }
+.flaticon-partner:before { content: "\f104"; }
+.flaticon-education:before { content: "\f105"; }
+.flaticon-calendar:before { content: "\f106"; }

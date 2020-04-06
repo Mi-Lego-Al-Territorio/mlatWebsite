@@ -6,7 +6,7 @@ menu:
   main:
     identifier: eventi
     name: eventi
-    pre: fas fa-calendar-alt
+    pre: calendar
     weight: 3
 layout: eventi
 ---
