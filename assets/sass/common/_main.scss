@@ -20,7 +20,7 @@ main {
 
 #menu-toggle:checked ~ #overlay,
 .menu-icons:hover ~ #overlay {
-  @include media('<=phone') {
+  @include media('<tablet') {
     transition: $menu-transtion-time;
     position: fixed; /* Sit on top of the page content */
     width: 100%; /* Full width (cover the whole page) */

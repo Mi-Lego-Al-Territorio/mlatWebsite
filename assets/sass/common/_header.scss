@@ -5,14 +5,14 @@ header {
   z-index: 2;
 
   #menu-toggle:checked ~ & {
-    @include media('<=phone') {
+    @include media('<tablet') {
       background-color: $color-fill;
     }
   }
 
   a {
     margin-left: $menu-icons-width + 30px;
-    @include media('<=phone') {
+    @include media('<tablet') {
       display: none;
     }
     h1 {
@@ -27,7 +27,7 @@ header {
   @include header-common;
   box-shadow: $header-shadow;
   z-index: 0;
-  @include media('<=phone') {
+  @include media('<tablet') {
     display: none;
   }
 }

@@ -12,7 +12,7 @@ footer {
   h1 {
     font-size: 1.3rem;
     color: $color-text;
-    @include media('<=phone') {
+    @include media('<tablet') {
       display: none;
     }
     a {
@@ -21,7 +21,7 @@ footer {
   }
   #mail {
     display: none;
-    @include media('<=phone') {
+    @include media('<tablet') {
       display: inline;
     }
   }

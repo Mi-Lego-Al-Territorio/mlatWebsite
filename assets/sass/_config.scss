@@ -34,14 +34,14 @@ $ham-line-height: 4px;
   margin-left: $menu-icons-width;
   transition: $menu-transtion-time ease-out;
   width: calc(100% - #{$menu-icons-width});
-  @include media('<=phone') {
+  @include media('<tablet') {
     width: calc(100vw);
     margin-left: 0;
   }
   #menu-toggle:checked ~ & {
     width: calc(100% - #{$menu-opened-width});
     margin-left: $menu-opened-width;
-    @include media('<=phone') {
+    @include media('<tablet') {
       width: 100vw;
       margin-left: 0;
     }

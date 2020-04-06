@@ -8,13 +8,14 @@
   display: flex;
   min-width: $menu-icons-width;
 
-  @include media('<=phone') {
+  @include media('<tablet') {
     background-color: $color-fill-light;
     transform: translateX(-$menu-opened-width);
     box-shadow: none;
+    color: red;
   }
   #menu-toggle:checked ~ & {
-    @include media('<=phone') {
+    @include media('<tablet') {
       transform: translateX(0);
     }
   }
@@ -43,16 +44,16 @@
     @include distribute-vertically();
     transition: $menu-transtion-time ease-out;
     width: 0;
-    @include media('<=phone') {
+    @include media('<tablet') {
       width: $menu-opened-width - $menu-icons-width;
-      transform: translateX(0);
+      transform: scaleX(1);
     }
 
     h2 {
       transform-origin: 0;
       transition: $menu-transtion-time ease-out;
       transform: scaleX(0);
-      @include media('<=phone') {
+      @include media('<tablet') {
         transform: scaleX(1);
       }
     }
