@@ -24,10 +24,13 @@
     i {
       margin: 0;
       width: 100%;
-      font-size: 1.6rem;
       text-align: center;
+      display: table;
     }
-
+    i::before {
+      font-size: 2rem;
+      display: table-cell;
+    }
     &:hover ~ .menu-names {
       width: $menu-opened-width - $menu-icons-width;
       h2 {
