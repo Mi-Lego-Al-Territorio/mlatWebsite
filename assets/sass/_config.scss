@@ -61,3 +61,18 @@ $ham-line-height: 4px;
   flex-direction: column;
   justify-content: space-around;
 }
+
+@mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0) {
+  i {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: table;
+    padding: $iconPad;
+    margin: $iconMarg;
+  }
+  i::before {
+    font-size: $iconSize;
+    display: table-cell;
+  }
+}

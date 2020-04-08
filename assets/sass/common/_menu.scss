@@ -22,16 +22,7 @@
   .menu-icons {
     @include distribute-vertically();
     width: $menu-icons-width;
-    i {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      display: table;
-    }
-    i::before {
-      font-size: 2rem;
-      display: table-cell;
-    }
+    @include centerIcon(2rem);
     &:hover ~ .menu-names {
       width: $menu-opened-width - $menu-icons-width;
       h2 {
