@@ -74,5 +74,6 @@ $ham-line-height: 4px;
   i::before {
     font-size: $iconSize;
     display: table-cell;
+    color: $color;
   }
 }
