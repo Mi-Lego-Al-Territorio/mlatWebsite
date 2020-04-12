@@ -1,12 +1,13 @@
 @import 'includeMedia';
 @import 'config';
-@import 'common/header'; // general elements
-@import 'common/menu'; // general elements
-@import 'common/main'; // general elements
-@import 'common/footer'; // general elements
-@import 'pages/home'; // general elements
-@import 'pages/events'; // general elements
-@import 'pages/team'; // general elements
+@import 'common/header';
+@import 'common/menu';
+@import 'common/main';
+@import 'common/footer';
+@import 'pages/home';
+@import 'pages/events';
+@import 'pages/team';
+@import 'pages/projects';
 
 * {
   font-family: Manjari, sans-serif;
@@ -18,11 +19,11 @@
 *::selection {
   background-color: $color-fill-light;
 }
-// html,
-// body {
-//   min-height: calc(100vh - (100vh - 100%));
-//   min-width: calc(100vw - (100vw - 100%));
-// }
+html,
+body {
+  // max-width: calc(100vw - (100vw - 100%));
+  // max-width: 100%;
+}
 
 html {
   scroll-behavior: smooth;
@@ -41,10 +42,6 @@ p {
 a {
   text-decoration: none;
   color: $color-link;
-}
-
-main > img {
-  color: red;
 }
 
 // to hide body temporarly when setting menu open state

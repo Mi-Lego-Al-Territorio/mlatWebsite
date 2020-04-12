@@ -30,19 +30,27 @@ $ham-width: 33px;
 $ham-margin-top-bottom: 6px;
 $ham-line-height: 4px;
 
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'xlarge': 1920px,
+);
+
 @mixin margin-shift-menu {
   margin-left: $menu-icons-width;
   transition: $menu-transtion-time ease-out;
   width: calc(100% - #{$menu-icons-width});
   @include media('<tablet') {
-    width: calc(100vw);
+    width: 100%;
+    background-color: green;
     margin-left: 0;
   }
   #menu-toggle:checked ~ & {
     width: calc(100% - #{$menu-opened-width});
     margin-left: $menu-opened-width;
     @include media('<tablet') {
-      width: 100vw;
+      width: 100%;
       margin-left: 0;
     }
   }
@@ -62,7 +70,7 @@ $ham-line-height: 4px;
   justify-content: space-around;
 }
 
-@mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0) {
+@mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0, $color: inherit) {
   i {
     margin: 0;
     width: 100%;

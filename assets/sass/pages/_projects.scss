@@ -1,0 +1,20 @@
+.projects {
+  display: flex;
+  justify-content: space-around;
+  @include media('<tablet') {
+    flex-direction: column;
+  }
+  .modelSection {
+    flex: 1;
+    display: flex;
+    padding: 0 3%;
+    flex-direction: column;
+    align-items: center;
+    @include centerIcon(6.3rem, 0, 0 0 20px 0, $color-fill);
+
+    h1 {
+      color: $color-title;
+      margin: 20px 0;
+    }
+  }
+}
