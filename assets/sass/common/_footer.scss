@@ -8,7 +8,7 @@ footer {
   z-index: -1;
   @include margin-shift-menu;
   transition: $menu-transtion-time ease-out;
-  // padding: 20px;
+  padding: 20px;
   h1 {
     font-size: 1.3rem;
     color: $color-text;

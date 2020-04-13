@@ -20,15 +20,13 @@
     <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
   </head>
   <body class="no-display">
-    <div class="header-shadow"></div>
     <input type="checkbox" id="menu-toggle" />
     <script>
       // script to save menu state for better UX
       // it is inside the html for better perfornmance
       const body = document.querySelector('body');
-      menuState = localStorage.getItem('mlatMenu') == 'open';
       const checkBox = document.getElementById('menu-toggle');
-      checkBox.checked = menuState === 'open';
+      checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
       body.classList.remove('no-display');
       checkBox.addEventListener('change', () => {
         localStorage.setItem('mlatMenu', checkBox.checked ? 'open' : 'closed');
@@ -38,6 +36,7 @@
     <header>
       <a href="/"><h1>{{$.Site.Title}}</h1> </a>
     </header>
+    <div class="header-shadow"></div>
     <div id="overlay"></div>
     <label for="menu-toggle">
       <span></span>
@@ -48,27 +47,21 @@
     <div class="menu">
       <div class="menu-icons">
         {{range $.Site.Menus.main}}
-        <a href="/{{.Name}}"><i class="{{.Pre}}"></i> </a>{{end}}
+        <a href="{{.URL}}"><i class="{{.Pre}}"></i> </a>{{end}}
       </div>
       <div class="menu-names">
         {{range $.Site.Menus.main}}
-        <a href="/{{.Name}}"><h2>{{.Name}}</h2></a>{{end}}
+        <a href="{{.URL}}"><h2>{{.Name}}</h2></a>{{end}}
       </div>
     </div>
-    <main>
-      <div class="image"></div>
-      {{ block "title" . }}
-      <h1>{{.Page.Title}}</h1>
-      {{ end }} {{ block "content" . }}
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-        culpa ex veniam exercitationem nesciunt, enim laboriosam est odit
-        tempore animi, voluptatibus quis quos sint id! Consectetur, accusamus?
-        Officiis facere laudantium laboriosam commodi tempore, odit dolores,
-        itaque ab nisi veritatis ducimus illum ratione. Accusamus, dolore
-      </p>
-      {{ end }}
-    </main>
+    <div class="centermain">
+      <main>
+        <div class="image"></div>
+        {{ block "title" . }}
+        <h1 class="page-title">{{.Page.Title}}</h1>
+        {{ end }} {{ block "content" . }} {{ end }}
+      </main>
+    </div>
 
     <footer>
       <h1>
@@ -82,5 +75,6 @@
         >{{end}}{{end}}
       </div>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>

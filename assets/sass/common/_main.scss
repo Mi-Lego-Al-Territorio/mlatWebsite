@@ -7,14 +7,19 @@
   align-items: center;
   background-color: $color-bkg;
   @include margin-shift-menu;
-  background-color: red;
 
   main {
     margin: 0;
-    width: 100%;
 
     @include media('>=xlarge') {
       margin: 0 20%;
+    }
+    & .page-title {
+      text-align: center;
+      font-size: 3rem;
+      margin: 60px 0;
+      color: $color-title;
+      text-transform: uppercase;
     }
   }
 }

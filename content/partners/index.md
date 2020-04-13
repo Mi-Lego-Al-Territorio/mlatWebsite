@@ -5,7 +5,7 @@ draft: true
 menu:
   main:
     identifier: partners
-    pre: partner
+    pre: flaticon-partner
     name: partners
     weight: 5
 type: partners

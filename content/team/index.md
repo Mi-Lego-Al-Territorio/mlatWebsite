@@ -7,7 +7,7 @@ menu:
   main:
     identifier: team
     name: team
-    pre: team
+    pre: flaticon-team
     weight: 1
     url: /team
 layout: team

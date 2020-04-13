@@ -6,7 +6,7 @@ menu:
   main:
     identifier: eventi
     name: eventi
-    pre: calendar
+    pre: flaticon-calendar
     weight: 3
 layout: eventi
 ---

@@ -3,7 +3,6 @@ header {
   display: flex;
   align-items: center;
   z-index: 2;
-
   #menu-toggle:checked ~ & {
     @include media('<tablet') {
       background-color: $color-fill;
@@ -13,12 +12,15 @@ header {
   a {
     margin-left: $menu-icons-width + 30px;
     @include media('<tablet') {
-      display: none;
+      margin-left: $menu-icons-width + 5px;
     }
     h1 {
       position: relative;
       top: 4px;
       color: $color-title;
+      @include media('<tablet') {
+        font-size: 7vw;
+      }
     }
   }
 }
