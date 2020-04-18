@@ -28,7 +28,6 @@
       if (!isMobile) {
         const checkBox = document.getElementById('menu-toggle');
         checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
-      body.classList.remove('no-display');
         checkBox.addEventListener('change', () => {
           localStorage.setItem(
             'mlatMenu',
