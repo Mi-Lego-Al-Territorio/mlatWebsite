@@ -24,13 +24,19 @@
     <script>
       // script to save menu state for better UX
       // it is inside the html for better perfornmance
-      const body = document.querySelector('body');
-      const checkBox = document.getElementById('menu-toggle');
-      checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      if (!isMobile) {
+        const checkBox = document.getElementById('menu-toggle');
+        checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
       body.classList.remove('no-display');
-      checkBox.addEventListener('change', () => {
-        localStorage.setItem('mlatMenu', checkBox.checked ? 'open' : 'closed');
-      });
+        checkBox.addEventListener('change', () => {
+          localStorage.setItem(
+            'mlatMenu',
+            checkBox.checked ? 'open' : 'closed'
+          );
+        });
+      }
+      document.querySelector('body').classList.remove('no-display');
     </script>
 
     <header>
