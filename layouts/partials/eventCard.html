@@ -1,0 +1,12 @@
+{{/* eventCard.html */}}
+<div class="eventCard">
+  <div class="eventCard-info">
+    {{ $eventDate := (partial "eventIdToDate" .id)}}
+    <h2 class="eventCard-date">{{$eventDate}} - {{.place}}</h2>
+    <h1 class="eventCard-name">{{.title}}</h1>
+
+    {{.content}}
+  </div>
+  <!-- prettier-ignore -->
+  {{ partial "image.html" (dict "path" (.id | printf "images/eventi/%s.*") "alt" .File.BaseFileName) }}
+</div>

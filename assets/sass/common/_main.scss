@@ -1,16 +1,18 @@
 .centermain {
   margin-top: $header-height;
   min-height: calc(100vh - #{$header-height} - #{$footer-height});
-  // padding: 20px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color-bkg;
   @include margin-shift-menu;
 
+  @include media('>=xlarge') {
+    padding: 0 10px;
+  }
   main {
     margin: 0;
-
     @include media('>=xlarge') {
       margin: 0 20%;
     }
