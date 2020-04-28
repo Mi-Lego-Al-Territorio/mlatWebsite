@@ -18,6 +18,7 @@
     ></script>
 
     <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
+    <script defer src="/index.js"></script>
   </head>
   <body class="no-display">
     <input type="checkbox" id="menu-toggle" />
@@ -61,7 +62,6 @@
     </div>
     <div class="centermain">
       <main>
-        <div class="image"></div>
         {{ block "title" . }}
         <h1 class="page-title">{{.Page.Title}}</h1>
         {{ end }} {{ block "content" . }} {{ end }}
@@ -80,6 +80,5 @@
         >{{end}}{{end}}
       </div>
     </footer>
-    <script src="/index.js"></script>
   </body>
 </html>
