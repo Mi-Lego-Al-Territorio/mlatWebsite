@@ -1,15 +1,17 @@
-{{ define "content"}}
+{{ define "title"}}
+<!--empty-->
+{{end}} {{ define "content"}}
 <!--  prettier-ignore -->
-{{$nowFormatted := replace (substr now 0 10 ) "-" ""}}
+{{$today := replace (substr now 0 10 ) "-" ""}}
 <div class="events">
-  Eventi futuri
+  <h1 class="page-title">Eventi futuri</h1>
   <!--  prettier-ignore -->
-  {{range (sort (where .Resources "Name" ">=" $nowFormatted) "Name" "desc") }}
+  {{range (sort (where .Resources "Name" ">=" $today) "Name" "desc") }}
   <!--  prettier-ignore -->
   {{ partial "eventCard" (dict "title" .Title "content" .Content "place"  .Params.place "id" .File.BaseFileName) }}
   {{end}}
-Eventi passati
-  {{range (sort (where .Resources "Name" "<" $nowFormatted) "Name" "desc") }}
+  <h1 class="page-title">Eventi passati</h1>
+  {{range (sort (where .Resources "Name" "<" $today) "Name" "desc") }}
   <!--  prettier-ignore -->
   {{ partial "eventCard" (dict "title" .Title "content" .Content "place"  .Params.place "id" .File.BaseFileName) }}
   {{end}}
