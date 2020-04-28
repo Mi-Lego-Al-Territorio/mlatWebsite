@@ -4,20 +4,9 @@
   <div class="modelSection">
     <i class="{{.Params.icon}}"></i>
     <h1>{{.Title}}</h1>
-    {{.Content}} {{ $pics := resources.GetMatch "images/sismico.*" }}
+    {{.Content}}
     <!-- prettier-ignore -->
-    {{ $bla :=resources.GetMatch "images/bla.*" }}
-
-    <picture>
-      <source
-        media="(min-width: 650px)"
-        srcset='{{($bla.Resize "1300x").RelPermalink}}'
-      />
-      <!-- <source media="(min-width: 465px)" srcset="img_white_flower.jpg"> -->
-      <img src="{{$bla.RelPermalink}}" alt="sismico" />
-    </picture>
-
-    <!-- <img src="{{$bla.Permalink}}" /> -->
+    {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti/%s.*") "alt" .File.BaseFileName) }}
   </div>
   {{end}}
 </div>
