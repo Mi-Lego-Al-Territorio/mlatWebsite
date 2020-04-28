@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
   i {
     color: $color-fill;
     font-size: 3.5rem;
@@ -12,9 +13,13 @@
     width: 100%;
     max-width: 700px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 200px));
     row-gap: 30px;
     margin: 0 0 120px 0;
+    @include media('<tablet') {
+      grid-template-columns: 1fr 1fr;
+    }
 
     .groupIcon {
       display: flex;
@@ -39,15 +44,20 @@
       margin: 40px 0;
       display: flex;
       @include centerIcon(6rem);
+      i {
+        @include media('<tablet') {
+          display: none;
+        }
+      }
       .group-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
-      }
-      h2 {
-        text-transform: capitalize;
-        color: $color-title;
-        margin-bottom: 10px;
+        h2 {
+          text-transform: capitalize;
+          color: $color-title;
+          margin-bottom: 10px;
+        }
       }
     }
   }
