@@ -44,8 +44,7 @@ header {
 }
 
 #menu-toggle {
-  opacity: 0;
-  position: absolute;
+  display: none;
 }
 
 label[for='menu-toggle'] {
