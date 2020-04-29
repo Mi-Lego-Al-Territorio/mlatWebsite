@@ -1,15 +1,22 @@
 {{define "content"}}
 
-<div class="info">
-  <p id="motto">
-    {{ with .Param "motto"}}{{.}}{{end}}
-  </p>
-  <h2>CHI SIAMO</h2>
-  {{ .Content }}
-</div>
-<div class="lastEvents">
-  <div>Event</div>
-  <div>Event</div>
+<div class="home">
+  <div class="info">
+    <img src="logo.svg" />
+    <p id="motto">
+      {{ with .Param "motto"}}{{.}}{{end}}
+    </p>
+    <h2>CHI SIAMO</h2>
+    {{ .Content }}
+  </div>
+  <div class="lastEvents">
+    {{$eventPage := .GetPage "eventi"}}
+    <!--  prettier-ignore -->
+    {{range first 2 ($eventPage.Resources)}}
+    {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "id" .File.BaseFileName "mini" true) }}
+    {{end}}
+    <!--  prettier-ignore -->
+  </div>
 </div>
 
 {{end}}
