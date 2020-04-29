@@ -1,27 +1,44 @@
-.info {
-  flex: 2;
+.home {
   display: flex;
-  flex-direction: column;
-  padding: 70px 20px;
+  justify-content: space-between;
+  @include media('<tablet') {
+    flex-direction: column;
+  }
+  .info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    @include media('<tablet') {
+      padding: 0px 20px;
+    }
+    img {
+      display: none;
+      @include media('<tablet') {
+        display: block;
+      }
+    }
+    p {
+      margin: 1.7rem 0;
+    }
+    #motto {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: $color-fill;
+    }
+  }
 
-  p {
-    margin: 1.7rem 0;
-  }
-  #motto {
-    font-size: 1.8rem;
-    margin-bottom: 3rem;
-  }
-  h2 {
-    color: $color-fill;
-  }
-}
+  .lastEvents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-.lastEvents {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-around;
-  div {
-    text-align: center;
+    @include media('<tablet') {
+      align-items: center;
+    }
+    @include eventCard(true, false);
   }
 }
