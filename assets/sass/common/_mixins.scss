@@ -45,3 +45,55 @@
     color: $color;
   }
 }
+
+@mixin eventCard($mini, $showImg) {
+  .eventCard {
+    width: 100%;
+    display: flex;
+    margin: 25px 0;
+    box-shadow: $event-card-shadow;
+    padding: 30px;
+    border-radius: 15px;
+    @if mini = true {
+      max-width: 300px;
+    }
+    @include media('<tablet') {
+      max-width: initial;
+      flex-direction: column;
+    }
+
+    &-info {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-date {
+      color: $color-fill;
+      @if mini = true {
+        font-size: 1.3rem;
+      }
+    }
+
+    &-name {
+      margin: 15px 0;
+      color: $color-title;
+      @if mini = true {
+        font-size: 1.5rem;
+      }
+    }
+
+    picture {
+      @if $showImg == true {
+        flex: 1;
+        margin: auto 20px;
+
+        img {
+          width: 100%;
+        }
+      } @else {
+        display: none;
+      }
+    }
+  }
+}
