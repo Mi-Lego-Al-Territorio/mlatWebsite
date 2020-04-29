@@ -87,6 +87,9 @@
       @if $showImg == true {
         flex: 1;
         margin: auto 20px;
+        @include media('<tablet') {
+          margin: 20px auto;
+        }
 
         img {
           width: 100%;
