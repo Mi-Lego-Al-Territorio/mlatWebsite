@@ -54,7 +54,7 @@
     box-shadow: $event-card-shadow;
     padding: 30px;
     border-radius: 15px;
-    @if mini = true {
+    @if mini == true {
       max-width: 300px;
     }
     @include media('<tablet') {
