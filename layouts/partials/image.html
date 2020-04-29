@@ -7,7 +7,6 @@
   usage example:
     {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti/%s.*") "alt" .File.BaseFileName) }}
     */}}
-{{ with $pic }}
 <picture>
   <source
     media="(min-width: 601px)"
@@ -19,4 +18,3 @@
   />
   <img src="{{$pic.RelPermalink}}" alt="{{$.alt}}" />
 </picture>
-{{end}}
