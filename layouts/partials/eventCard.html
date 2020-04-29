@@ -4,9 +4,8 @@
     {{ $eventDate := (partial "eventIdToDate" .id)}}
     <h2 class="eventCard-date">{{$eventDate}} - {{.place}}</h2>
     <h1 class="eventCard-name">{{.title}}</h1>
-
-    {{.content}}
+    {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
   </div>
   <!-- prettier-ignore -->
-  {{ partial "image.html" (dict "path" (.id | printf "images/eventi/%s.*") "alt" .File.BaseFileName) }}
+  {{ partial "image.html" (dict "path" (.id | printf "images/eventi/%s.*") "alt" .id) }}
 </div>
