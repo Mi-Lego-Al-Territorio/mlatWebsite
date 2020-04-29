@@ -2,6 +2,7 @@ header {
   @include header-common;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 2;
   #menu-toggle:checked ~ & {
     @include media('<tablet') {
@@ -21,6 +22,14 @@ header {
       @include media('<tablet') {
         font-size: 7vw;
       }
+    }
+  }
+
+  img {
+    height: 100%;
+    margin-right: 100px;
+    @include media('<tablet') {
+      display: none;
     }
   }
 }
