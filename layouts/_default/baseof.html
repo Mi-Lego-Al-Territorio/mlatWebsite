@@ -26,16 +26,16 @@
       // script to save menu state for better UX
       // it is inside the html for better perfornmance
       const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const checkBox = document.getElementById('menu-toggle');
+      let isMenuOpen;
       if (!isMobile) {
-        const checkBox = document.getElementById('menu-toggle');
         checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
-        checkBox.addEventListener('change', () => {
-          localStorage.setItem(
-            'mlatMenu',
-            checkBox.checked ? 'open' : 'closed'
-          );
-        });
       }
+      checkBox.addEventListener('change', () => {
+        isMenuOpen = checkBox.checked;
+        localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
+        console.log(isMenuOpen);
+      });
       document.querySelector('body').classList.remove('no-display');
     </script>
 

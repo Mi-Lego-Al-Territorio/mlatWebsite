@@ -10,13 +10,15 @@ function shrinkHeader() {
 if (isMobile) {
   window.onscroll = () => {
     // TODO need to adjust based on SASS variables
-    if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
-    ) {
-      shrinkHeader();
-    } else {
-      expandHeader();
+    if (!isMenuOpen) {
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        shrinkHeader();
+      } else {
+        expandHeader();
+      }
     }
   };
 }
