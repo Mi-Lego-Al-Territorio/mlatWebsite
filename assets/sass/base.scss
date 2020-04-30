@@ -22,6 +22,7 @@
 }
 html,
 body {
+  max-height: calc(100vh - (100vh - 100%));
   // max-width: calc(100vw - (100vw - 100%));
   // max-width: 100%;
 }
