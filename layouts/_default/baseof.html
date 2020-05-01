@@ -25,22 +25,6 @@
   </head>
   <body class="no-display">
     <input type="checkbox" id="menu-toggle" />
-    <script>
-      // script to save menu state for better UX
-      // it is inside the html for better perfornmance
-      const isMobile = window.matchMedia('(max-width: 768px)').matches;
-      const checkBox = document.getElementById('menu-toggle');
-      let isMenuOpen;
-      if (!isMobile) {
-        checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
-      }
-      checkBox.addEventListener('change', () => {
-        isMenuOpen = checkBox.checked;
-        localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
-        console.log(isMenuOpen);
-      });
-      document.querySelector('body').classList.remove('no-display');
-    </script>
 
     <header>
       <a href="/"><h1>{{$.Site.Title}}</h1> </a>
@@ -84,5 +68,21 @@
         >{{end}}{{end}}
       </div>
     </footer>
+    <script>
+      // script to save menu state for better UX
+      // it is inside the html for better perfornmance
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const checkBox = document.getElementById('menu-toggle');
+      let isMenuOpen;
+      if (!isMobile) {
+        checkBox.checked = localStorage.getItem('mlatMenu') === 'open';
+      }
+      checkBox.addEventListener('change', () => {
+        isMenuOpen = checkBox.checked;
+        localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
+        console.log(isMenuOpen);
+      });
+      document.querySelector('body').classList.remove('no-display');
+    </script>
   </body>
 </html>
