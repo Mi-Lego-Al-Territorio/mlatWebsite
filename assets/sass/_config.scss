@@ -1,32 +1,29 @@
-// light theme
-$color-bkg: #ffffff;
-$color-title: #e84040;
-$color-fill: #f8b10b;
-$color-fill-light: lighten($color-fill, 20%);
-$color-text: #292929;
-$color-link: #3953a1;
-$menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
-$header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.25);
-$event-card-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.25);
+:root {
+  --color-title: #e84040;
+  // light theme
+  --color-bkg: #ffffff;
+  --color-fill: #f8b10b;
+  --color-fill-light: lighten($color-fill, 20%);
+  --color-text: #292929;
+  --color-link: #3953a1;
+  --menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  --header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.25);
+  --event-card-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.25);
+  // dark theme for fun
+  // --color-bkg: #252525;
+  // --color-title: #e84040;
+  // --color-fill: #3953a1;
+  // --color-fill-light: lighten($color-fill, 20%);
+  // --color-text: #e4e4e4;
+  // --color-link: #f8b10b;
+  // --menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  --header-height: 80px;
+}
 
-// dark theme for fun
-// $color-bkg: #252525;
-// $color-title: #e84040;
-// $color-fill: #3953a1;
-// $color-fill-light: lighten($color-fill, 20%);
-// $color-text: #e4e4e4;
-// $color-link: #f8b10b;
-// $menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-// $header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.5);
-
-$header-height: 80px;
 $footer-height: 70px;
-
 $menu-icons-width: 65px;
 $menu-opened-width: 180px;
-
 $menu-transtion-time: 0.2s;
-
 $ham-width: 33px;
 $ham-margin-top-bottom: 6px;
 $ham-line-height: 4px;
@@ -37,3 +34,17 @@ $breakpoints: (
   'desktop': 1024px,
   'xlarge': 1920px,
 );
+
+// map theme css variable to sass variable
+$color-title: var(--color-title);
+$color-bkg: var(--color-bkg);
+$color-fill: var(--color-fill);
+$color-fill-light: var(--color-fill-light);
+$color-text: var(--color-text);
+$color-link: var(--color-link);
+$menu-shadow: var(--menu-shadow);
+$header-shadow: var(--header-shadow);
+$event-card-shadow: var(--event-card-shadow);
+
+// map css variables that are needed for js to sass variables
+$header-height: var(--header-height);
