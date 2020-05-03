@@ -1,6 +1,6 @@
 .centermain {
-  margin-top: $header-height;
-  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+  @include main-common();
+  min-height: calc(100% - #{$header-height} - #{$footer-height});
   padding: 0 30px;
   display: flex;
   flex-direction: column;

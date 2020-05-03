@@ -7,8 +7,8 @@
     margin-left: 0;
   }
   #menu-toggle:checked ~ & {
-    width: calc(100% - #{$menu-opened-width});
-    margin-left: $menu-opened-width;
+    width: calc(100% - #{($menu-links-width + $menu-icons-width)});
+    margin-left: ($menu-links-width + $menu-icons-width);
     @include media('<tablet') {
       width: 100%;
       margin-left: 0;
@@ -28,6 +28,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@mixin main-common {
+  top: $header-height;
+  position: relative;
+  z-index: -1;
 }
 
 @mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0, $color: inherit) {
