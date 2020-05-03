@@ -6,7 +6,7 @@ layout: progetti
 menu:
   main:
     identifier: progetti
-    pre: flaticon-project-management
+    pre: flaticon-shapes-and-symbols
     name: progetti
     weight: 2
 ---

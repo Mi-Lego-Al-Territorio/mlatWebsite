@@ -29,6 +29,7 @@
     <header>
       <a href="/"><h1>{{$.Site.Title}}</h1> </a>
       <img src="/logo.svg" />
+      <!-- <i class="flaticon-business"></i> -->
     </header>
     <div class="header-shadow"></div>
     <div id="overlay"></div>
@@ -38,15 +39,13 @@
       <span></span>
     </label>
 
-    <div class="menu">
-      <div class="menu-icons">
-        {{range $.Site.Menus.main}}
-        <a href="{{.URL}}"><i class="{{.Pre}}"></i> </a>{{end}}
-      </div>
-      <div class="menu-names">
-        {{range $.Site.Menus.main}}
-        <a href="{{.URL}}"><h2>{{.Name}}</h2></a>{{end}}
-      </div>
+    <div class="menu-icons">
+      {{range $.Site.Menus.main}}
+      <a href="{{.URL}}"><i class="{{.Pre}}"></i> </a>{{end}}
+    </div>
+    <div class="menu-names">
+      {{range $.Site.Menus.main}}
+      <a href="{{.URL}}"><h2>{{.Name}}</h2></a>{{end}}
     </div>
     <div class="centermain">
       <main>
