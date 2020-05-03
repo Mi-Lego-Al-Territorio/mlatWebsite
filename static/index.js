@@ -26,3 +26,17 @@ if (isMobile) {
 document.querySelector('label').addEventListener('click', () => {
   expandHeader();
 });
+
+function updatedMenuState() {
+  isMenuOpen = checkBox.checked;
+  localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
+}
+
+document.querySelector('#overlay').addEventListener('click', () => {
+  checkBox.checked = false;
+  updatedMenuState();
+});
+
+checkBox.addEventListener('change', () => {
+  updatedMenuState();
+});
