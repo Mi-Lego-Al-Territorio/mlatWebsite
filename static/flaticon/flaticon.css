@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 26/04/2020 20:09
+  	Creation date: 03/05/2020 20:34
   	*/
 
 @font-face {
@@ -32,9 +32,10 @@ margin-left: 20px;
 
 .flaticon-flood:before { content: "\f100"; }
 .flaticon-earthquake:before { content: "\f101"; }
-.flaticon-project-management:before { content: "\f102"; }
-.flaticon-team:before { content: "\f103"; }
-.flaticon-partner:before { content: "\f104"; }
-.flaticon-education:before { content: "\f105"; }
-.flaticon-calendar:before { content: "\f106"; }
-.flaticon-next:before { content: "\f107"; }
+.flaticon-team:before { content: "\f102"; }
+.flaticon-partner:before { content: "\f103"; }
+.flaticon-education:before { content: "\f104"; }
+.flaticon-calendar:before { content: "\f105"; }
+.flaticon-next:before { content: "\f106"; }
+.flaticon-shapes-and-symbols:before { content: "\f107"; }
+.flaticon-business:before { content: "\f108"; }
