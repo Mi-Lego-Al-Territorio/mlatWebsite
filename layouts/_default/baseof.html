@@ -7,7 +7,8 @@
       content="width=device-width, height=device-height, initial-scale=1.0"
     />
     <link rel="shortcut icon" type="image/svg+xml" href="/logo.svg" />
-    {{ $style := resources.Get "sass/base.scss" | resources.ToCSS}}
+    <!--  prettier-ignore -->
+    {{ $style := resources.Get "sass/base.scss"|toCSS | postCSS | minify | fingerprint}}
     <link
       href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
       rel="stylesheet"
