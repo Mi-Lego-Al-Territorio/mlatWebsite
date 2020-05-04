@@ -1,0 +1,16 @@
+{
+  "name": "mlatwebsite",
+  "description": "package to manage HUGO based website for Mi lego al Territorio",
+  "scripts": {
+    "build": "hugo",
+    "dev": "hugo serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mi-Lego-Al-Territorio/mlatWebsite.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-cli": "^7.1.1"
+  }
+}
