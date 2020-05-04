@@ -18,7 +18,7 @@
   <div class="lastEvents">
     {{$eventPage := .GetPage "eventi"}}
     <!--  prettier-ignore -->
-    {{range first 2 ($eventPage.Resources)}}
+    {{range first 2 (sort  $eventPage.Resources "Name" "desc")}}
     {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "id" .File.BaseFileName "mini" true) }}
     {{end}}
   </div>
