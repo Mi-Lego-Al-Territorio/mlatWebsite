@@ -1,10 +1,10 @@
 @import 'includeMedia';
 @import 'config';
-@import 'common/mixins';
-@import 'common/header';
-@import 'common/menu';
-@import 'common/main';
-@import 'common/footer';
+@import 'general/mixins';
+@import 'general/header';
+@import 'general/menu';
+@import 'general/main';
+@import 'general/footer';
 @import 'pages/home';
 @import 'pages/events';
 @import 'pages/team';
