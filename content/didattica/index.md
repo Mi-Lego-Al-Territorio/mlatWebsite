@@ -1,7 +1,6 @@
 ---
-title: 'Didattica'
-date: 2020-03-19T22:41:15+01:00
-draft: true
+title: La nostra didattica
+draft: false
 layout: didattica
 menu:
   main:
@@ -9,4 +8,8 @@ menu:
     pre: flaticon-education
     name: didattica
     weight: 4
+# data about page
+activityAreas:
+  - sismico
+  - idraulico
 ---
