@@ -1,0 +1,13 @@
+{{ define "content"}}
+<div class="partners">
+  {{ range .Resources}}
+  <a href="{{.Params.link}}" target="_blank">
+    <div class="partners-card">
+      <!-- prettier-ignore -->
+      {{partial "image.html" (dict "path" (.File.BaseFileName | printf "images/partners/%s.*") "alt" .File.BaseFileName )}}
+      <h2>{{.Params.name}}</h2>
+    </div>
+  </a>
+  {{end}}
+</div>
+{{end}}
