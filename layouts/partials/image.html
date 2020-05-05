@@ -10,11 +10,11 @@
 <picture>
   <source
     media="(min-width: 601px)"
-    srcset='{{($pic.Fill "600x400 jpg top").RelPermalink}}'
+    srcset='{{($pic.Fill "600x400 top").RelPermalink}}'
   />
   <source
     media="(max-width: 600px)"
-    srcset='{{($pic.Fill "300x200 jpg").RelPermalink}}'
+    srcset='{{($pic.Fill "300x200 ").RelPermalink}}'
   />
   <img src="{{$pic.RelPermalink}}" alt="{{$.alt}}" />
 </picture>
