@@ -11,7 +11,7 @@
   @include distribute-vertically();
   width: $menu-icons-width;
   @include centerIcon(2rem);
-  z-index: 1;
+  z-index: 2;
   #menu-toggle:checked ~ &,
   &:hover,
   &:hover ~ .menu-names {
@@ -31,7 +31,7 @@
   width: $menu-links-width;
   transform: translateX(-$menu-links-width);
   box-shadow: $menu-shadow;
-
+  z-index: 1;
   h2 {
     transition: $menu-transtion-time ease-out;
   }

@@ -37,7 +37,7 @@ header {
 .header-shadow {
   @include header-common;
   box-shadow: $header-shadow;
-  z-index: 0;
+  z-index: 1;
   @include media('<tablet') {
     display: none;
   }

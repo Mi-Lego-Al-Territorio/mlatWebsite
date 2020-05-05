@@ -32,7 +32,6 @@
 @mixin main-common {
   top: $header-height;
   position: relative;
-  z-index: -1;
 }
 
 @mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0, $color: inherit) {
