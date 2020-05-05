@@ -7,7 +7,11 @@
   {{range $index, $area := (.Param "activityAreas")}}
     {{range where $steps "Params.area" $area}}
   <div class="education-step">
-    <h1>{{.Params.area}} {{.Params.step}}</h1>
+    <div class="progress-indicator">a</div>
+    <div class="step-info">
+      <h2>{{.Params.area}} {{.Title}}</h2>
+      {{.Content}}
+    </div>
   </div>
   {{end}} {{end}}
   <div class="education-navigator">ciao</div>

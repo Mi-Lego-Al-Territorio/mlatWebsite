@@ -1,20 +1,33 @@
+$edu-nav-height: 400px;
+$edu-nav-width: 70px;
+$edu-nav-right: 30px;
 .education {
   height: 100%;
   &-step {
-    flex: 1;
-    background-color: rgb(137, 137, 230);
+    display: flex;
     height: calc(100vh - #{$header-height});
+    background-color: rgb(230, 171, 137);
+
+    .progress-indicator {
+      flex: 1;
+      background-color: rgb(210, 230, 137);
+    }
+    .step-info {
+      align-self: center;
+      flex: 5;
+      background-color: rgb(137, 137, 230);
+      padding-right: $edu-nav-width + $edu-nav-right + 5px;
+    }
   }
-}
-.education-navigator {
-  $edu-nav-height: 400px;
-  $edu-nav-width: 70px;
-  width: $edu-nav-width;
-  border-radius: $edu-nav-width / 2;
-  height: $edu-nav-height;
-  position: fixed;
-  top: calc(50vh + #{$header-height} / 2 - #{$edu-nav-height} / 2);
-  right: 20px;
-  z-index: 20;
-  background-color: red;
+
+  &-navigator {
+    width: $edu-nav-width;
+    border-radius: $edu-nav-width / 2;
+    height: $edu-nav-height;
+    position: fixed;
+    top: calc(50vh + #{$header-height} / 2 - #{$edu-nav-height} / 2);
+    right: $edu-nav-right;
+    z-index: 20;
+    background-color: red;
+  }
 }
