@@ -1,5 +1,5 @@
 ---
-title: 'I nostri partners'
+title: I nostri partners
 date: 2020-03-19T22:41:15+01:00
 menu:
   main:
