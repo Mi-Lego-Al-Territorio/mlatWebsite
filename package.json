@@ -3,7 +3,8 @@
   "description": "package to manage HUGO based website for Mi lego al Territorio",
   "scripts": {
     "build": "hugo",
-    "dev": "hugo serve"
+    "dev": "hugo serve",
+    "prettify-all": "node_modules/.bin/prettier --write **/*.{html,css,scss,js,json}"
   },
   "repository": {
     "type": "git",
@@ -11,6 +12,28 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "postcss-cli": "^7.1.1"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.4",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5"
+  },
+  "lint-staged": {
+    "*.{html,css,scss,js,json}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf"
   }
 }
