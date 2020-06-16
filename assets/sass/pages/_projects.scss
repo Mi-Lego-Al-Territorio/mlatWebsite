@@ -10,7 +10,7 @@
     padding: 0 4%;
     flex-direction: column;
     align-items: center;
-    @include centerIcon(6.3rem, 0, 0 0 20px 0, $color-fill);
+    @include centerIcon(6.3rem, $color-fill, 0, 0 0 20px 0);
 
     h1,
     p,

@@ -34,7 +34,7 @@
   position: relative;
 }
 
-@mixin centerIcon($iconSize: 1rem, $iconPad: 0, $iconMarg: 0, $color: inherit) {
+@mixin centerIcon($iconSize: 1rem, $color: inherit, $iconPad: 0, $iconMarg: 0) {
   i {
     margin: 0;
     width: 100%;

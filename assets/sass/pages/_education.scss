@@ -1,33 +1,149 @@
 $edu-nav-height: 400px;
 $edu-nav-width: 70px;
 $edu-nav-right: 30px;
+$edu-arrow-width: $edu-nav-width - 20px;
+$edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
+
 .education {
   height: 100%;
+
+  // highlight different steps in dev mode
+  // &-step:nth-child(2n) {
+  //   background-color: rgb(183, 235, 154);
+  // }
+  // &-step:nth-child(2n + 1) {
+  //   background-color: rgb(232, 177, 245);
+  // }
+
   &-step {
+    margin-right: $edu-nav-width;
+    @include media('<tablet') {
+      margin-right: 0;
+    }
     display: flex;
     height: calc(100vh - #{$header-height});
-    background-color: rgb(230, 171, 137);
+
+    .step-anchor {
+      display: block;
+      position: relative;
+      top: -80px;
+      visibility: hidden;
+    }
 
     .progress-indicator {
       flex: 1;
-      background-color: rgb(210, 230, 137);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      @include centerIcon(5rem, $color-fill);
+      @include media('<tablet') {
+        @include centerIcon(2rem, $color-fill);
+      }
+      i {
+        @include media('<tablet') {
+          display: none;
+        }
+      }
+
+      i::before {
+        padding-top: 200px;
+      }
+      .progress-line {
+        width: 10px;
+        background-color: $color-fill;
+        height: 100%;
+      }
+      .start {
+        border-radius: 5px 5px 0 0;
+        margin-top: 50px;
+      }
+      .end {
+        height: 60%;
+        border-radius: 0 0 5px 5px;
+      }
     }
     .step-info {
       align-self: center;
       flex: 5;
-      background-color: rgb(137, 137, 230);
-      padding-right: $edu-nav-width + $edu-nav-right + 5px;
+      h2 {
+        color: $color-title;
+        font-size: 2.2rem;
+      }
+      p {
+        padding: 20px 0;
+        width: 90%;
+      }
+      &-imgs {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0;
+        @include media('<tablet') {
+          display: none;
+        }
+        picture {
+          img {
+            width: 70%;
+          }
+        }
+      }
     }
   }
 
   &-navigator {
     width: $edu-nav-width;
-    border-radius: $edu-nav-width / 2;
-    height: $edu-nav-height;
-    position: fixed;
-    top: calc(50vh + #{$header-height} / 2 - #{$edu-nav-height} / 2);
+    top: calc(
+      50vh + #{$header-height} / 2 - #{$edu-nav-height} / 2 - #{$edu-arrow-width}
+    );
+    @include media('<tablet') {
+      top: auto;
+      bottom: 50px;
+    }
     right: $edu-nav-right;
+    position: fixed;
     z-index: 20;
-    background-color: red;
+    .arrow {
+      margin: auto;
+      width: $edu-arrow-width;
+      height: $edu-arrow-width;
+      background-color: $color-fill;
+      border-radius: 50%;
+      box-shadow: $edu-nav-shadow;
+      display: 'flex';
+      flex-direction: column;
+      justify-content: center;
+      @include centerIcon(1.5rem, $color-title);
+    }
+
+    .arrow:first-child {
+      margin-bottom: 10px;
+    }
+
+    .arrow:last-child {
+      margin-top: 10px;
+    }
+    &-icons {
+      @include media('<tablet') {
+        display: none;
+      }
+      width: 100%;
+      height: $edu-nav-height;
+      border-radius: $edu-nav-width / 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px 0;
+      @include centerIcon(1.8rem, inherit);
+      box-shadow: $edu-nav-shadow;
+
+      a {
+        color: $color-fill;
+      }
+
+      .nav-highlighted {
+        color: $color-title;
+      }
+    }
   }
 }

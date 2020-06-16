@@ -81,7 +81,6 @@
       checkBox.addEventListener('change', () => {
         isMenuOpen = checkBox.checked;
         localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
-        console.log(isMenuOpen);
       });
       document.querySelector('body').classList.remove('no-display');
     </script>

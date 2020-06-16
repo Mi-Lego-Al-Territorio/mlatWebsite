@@ -2,13 +2,14 @@ function expandHeader() {
   document.querySelector('header').style.height = '80px';
   document.querySelector('label').style.top = '22px';
 }
+
 function shrinkHeader() {
   document.querySelector('header').style.height = '60px';
   document.querySelector('label').style.top = '10px';
 }
 
 if (isMobile) {
-  window.onscroll = () => {
+  window.addEventListener('scroll', () => {
     // TODO need to adjust based on SASS variables
     if (!isMenuOpen) {
       if (
@@ -20,7 +21,7 @@ if (isMobile) {
         expandHeader();
       }
     }
-  };
+  });
 }
 
 document.querySelector('label').addEventListener('click', () => {
