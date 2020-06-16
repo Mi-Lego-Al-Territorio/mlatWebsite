@@ -4,6 +4,7 @@
   "scripts": {
     "build": "hugo",
     "dev": "hugo serve",
+    "clear-hugo-cache": "hugo --gc",
     "prettify-all": "node_modules/.bin/prettier --write **/*.{html,css,scss,js,json}"
   },
   "repository": {
