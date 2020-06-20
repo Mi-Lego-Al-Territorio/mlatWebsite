@@ -1,0 +1,15 @@
+name: Keep events page synched
+on:
+  schedule:
+    - cron: '0 4 * * *'
+jobs:
+  keep_events_synched:
+    name: Keep events page synched
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout latest code
+        uses: actions/checkout@v2
+      - name: check events and redeploy site if needed
+        env:
+          DEPLOY_WEB_HOOK: ${{ secrets.DEPLOY_WEB_HOOK }}
+        run: sh keep_events_synched.sh
