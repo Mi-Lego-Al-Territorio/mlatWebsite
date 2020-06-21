@@ -15,6 +15,11 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
   //   background-color: rgb(232, 177, 245);
   // }
 
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
   &-step {
     margin-right: $edu-nav-width;
     @include media('<tablet') {
