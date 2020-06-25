@@ -16,11 +16,16 @@ do
     f=$(basename -- "$f")
     f=${f%.md}
     if [ "$f" = "index" ]
+    # if name equal index do nothing
     then
-    echo doing nothing because file is index
+    :
     # if one event is of yesterday trigger redeploy
     elif [ "$f" -eq "$YESTERDAY" ]
     then
+        echo yesterday event found, deploying...
         curl -X POST -d {} $DEPLOY_WEB_HOOK
+        echo finished deploying
     fi
 done
+
+exit 0
