@@ -17,10 +17,12 @@
   </div>
   <div class="lastEvents">
     {{$eventPage := .GetPage "eventi"}}
-    <!--  prettier-ignore -->
-    {{range first 2 (sort  $eventPage.Resources "Name" "desc")}}
-    {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "id" .File.BaseFileName "mini" true) }}
-    {{end}}
+    <a href="/eventi">
+      <!--  prettier-ignore -->
+      {{range first 2 (sort  $eventPage.Resources "Name" "desc")}}
+      {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "id" .File.BaseFileName "mini" true) }}
+      {{end}}
+    </a>
   </div>
 </div>
 

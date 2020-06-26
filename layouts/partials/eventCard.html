@@ -8,4 +8,7 @@
   </div>
   <!-- prettier-ignore -->
   {{ partial "image.html" (dict "path" (.id | printf "images/eventi/%s.*") "alt" .id) }}
+ {{if not .mini}}
+  <i class="flaticon-more"></i>
+  {{end}}
 </div>

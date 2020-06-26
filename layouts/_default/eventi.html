@@ -2,6 +2,7 @@
 <!--empty to ovveride-->
 {{end}} {{ define "content"}}
 <!--  prettier-ignore -->
+<script defer src="/events.js"></script>
 {{$today := replace (substr now 0 10 ) "-" ""}}
 <div class="events">
   {{$futureEvents := sort (where .Resources "Name" ">=" $today) "Name" "desc"}}
