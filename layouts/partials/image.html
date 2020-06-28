@@ -5,7 +5,7 @@
   - path
   - alt text
   usage example:
-    {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti/%s.*") "alt" .File.BaseFileName) }}
+    {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti-%s.*") "alt" .File.BaseFileName) }}
     */}}
 <picture>
   <source

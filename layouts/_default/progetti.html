@@ -6,7 +6,7 @@
     <h1>{{.Title}}</h1>
     {{.Content}}
     <!-- prettier-ignore -->
-    {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti/%s.*") "alt" .File.BaseFileName) }}
+    {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti-%s.*") "alt" .File.BaseFileName) }}
   </div>
   {{end}}
 </div>

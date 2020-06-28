@@ -7,7 +7,7 @@
     {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
   </div>
   <!-- prettier-ignore -->
-  {{ partial "image.html" (dict "path" (.id | printf "images/eventi/%s.*") "alt" .id) }}
+  {{ partial "image.html" (dict "path" (.id | printf "images/eventi-%s.*") "alt" .id) }}
  {{if not .mini}}
   <i class="flaticon-more"></i>
   {{end}}
