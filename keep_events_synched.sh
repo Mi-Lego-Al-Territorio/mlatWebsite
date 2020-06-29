@@ -10,22 +10,24 @@ YESTERDAY=$(date -d "-1 days" +'%Y%m%d')
 # get the files of the events
 EVENT_FILES=content/eventi/*.md
 
-# for each event check if one is of yesterday
-for f in $EVENT_FILES
+OUTPUT=$(grep -oP 'date: \d{4}\-\d{2}\-\d{2}' $EVENT_FILES)
+
+i=0;
+for o in $OUTPUT
 do
-    f=$(basename -- "$f")
-    f=${f%.md}
-    if [ "$f" = "index" ]
-    # if name equal index do nothing
+    isEven=$((i%2))
+    # take only odd values because they correspond to string ones
+    if [ $isEven -eq 1 ]
     then
-    :
-    # if one event is of yesterday trigger redeploy
-    elif [ "$f" -eq "$YESTERDAY" ]
-    then
-        echo yesterday event found, deploying...
-        curl -X POST -d {} $DEPLOY_WEB_HOOK
-        echo finished deploying
+        eventDate=$(echo $o | tr -d '-')
+        if [ "$eventDate" -eq "$YESTERDAY" ]
+        then
+            echo yesterday event found, deploying...
+            # curl -X POST -d {} $DEPLOY_WEB_HOOK
+            echo finished deploying
+        fi
     fi
+    i=$((i+1))
 done
 
 exit 0

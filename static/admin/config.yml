@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update
+
+publish_mode: editorial_workflow
+
+media_folder: 'assets/images' # Media files will be stored in the repo under assets/images
+
+site_url: https://determined-aryabhata-518306.netlify.app/
+
+logo_url: https://determined-aryabhata-518306.netlify.app/logo.svg
+
+locale: 'id'
+
+collections:
+  - name: 'eventi' # Used in routes, e.g., /admin/collections/blog
+    label: 'Eventi' # Used in the UI
+    folder: 'content/eventi' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    delete: false
+    description: 'Gli eventi del team'
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Titolo', name: 'title', widget: 'string' }
+      - { label: 'Luogo', name: 'place', widget: 'string' }
+      - {
+          label: 'Data',
+          name: 'date',
+          hint: "La data dell'evento",
+          widget: 'datetime',
+          format: 'YYYY--MM-DD',
+          timeFormat: false,
+        }
+      - {
+          label: 'Foto',
+          name: 'imgPath',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - { label: 'Descrizione', name: 'body', widget: 'markdown' }

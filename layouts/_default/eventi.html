@@ -3,23 +3,23 @@
 {{end}} {{ define "content"}}
 <!--  prettier-ignore -->
 <script defer src="/events.js"></script>
-{{$today := replace (substr now 0 10 ) "-" ""}}
+<!--  prettier-ignore -->
+{{$nowUnix := now.Unix}}
 <div class="events">
-  {{$futureEvents := sort (where .Resources "Name" ">=" $today) "Name" "desc"}}
+  <!--  prettier-ignore -->
+  {{$futureEvents := sort (where .Resources "Params.date.Unix" "ge" $nowUnix) ".Params.date.Unix" "desc"}}
   {{if ne (len $futureEvents) 0}}
   <h1 class="page-title">Eventi futuri</h1>
+  {{end}} {{range $futureEvents }}
   <!--  prettier-ignore -->
-  {{range $futureEvents }}
-  <!--  prettier-ignore -->
-  {{ partial "eventCard" (dict "title" .Title "content" .Content "place"  .Params.place "id" .File.BaseFileName) }}
+  {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date) }}
   {{end}}
-  {{end}}
+  {{$pastEvents := sort (where .Resources "Params.date.Unix" "lt" $nowUnix) ".Params.time" "desc" }}
+  {{if ne (len $pastEvents) 0}}
   <h1 class="page-title">Eventi passati</h1>
-  {{$pastEvents := sort (where .Resources "Name" "<" $today) "Name" "desc" }}
-  {{if ne (len $pastEvents) 0}} {{range $pastEvents}}
+  {{end}} {{range $pastEvents}}
   <!--  prettier-ignore -->
-  {{ partial "eventCard" (dict "title" .Title "content" .Content "place"  .Params.place "id" .File.BaseFileName) }}
-  {{end}}
+  {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "imgPath" .Params.imgPath) }}
   {{end}}
 </div>
 {{end}}

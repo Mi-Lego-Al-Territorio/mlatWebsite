@@ -1,20 +1,24 @@
-{{/* image.html */}} {{ $pic :=resources.GetMatch $.path }}
+{{/* image.html */}}
 <!-- prettier-ignore -->
+{{ $pics := resources.Match .path  }}
 {{/*
   partial args:
   - path
   - alt text
   usage example:
     {{ partial "image.html" (dict "path" (.File.BaseFileName | printf "images/progetti-%s.*") "alt" .File.BaseFileName) }}
+
     */}}
+{{range $pics}}
 <picture>
   <source
     media="(min-width: 601px)"
-    srcset='{{($pic.Fill "600x400 top").RelPermalink}}'
+    srcset='{{(.Fill "600x400 top").RelPermalink}}'
   />
   <source
     media="(max-width: 600px)"
-    srcset='{{($pic.Fill "300x200 ").RelPermalink}}'
+    srcset='{{(.Fill "300x200 ").RelPermalink}}'
   />
-  <img src="{{$pic.RelPermalink}}" alt="{{$.alt}}" />
+  <img src="{{.RelPermalink}}" alt="{{$.alt}}" />
 </picture>
+{{end}}

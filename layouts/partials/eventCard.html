@@ -1,13 +1,12 @@
 {{/* eventCard.html */}}
 <div class="eventCard">
   <div class="eventCard-info">
-    {{ $eventDate := (partial "eventIdToDate" .id)}}
-    <h2 class="eventCard-date">{{$eventDate}} - {{.place}}</h2>
+    <h2 class="eventCard-date">{{.date.Format "02/01/2006"}} - {{.place}}</h2>
     <h1 class="eventCard-name">{{.title}}</h1>
     {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
   </div>
   <!-- prettier-ignore -->
-  {{ partial "image.html" (dict "path" (.id | printf "images/eventi-%s.*") "alt" .id) }}
+  {{ partial "image.html" (dict "path" (.imgPath | printf "images/%s.*") "alt" .imgPath) }}
  {{if not .mini}}
   <i class="flaticon-more"></i>
   {{end}}
