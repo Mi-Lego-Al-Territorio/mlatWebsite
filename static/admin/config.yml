@@ -10,7 +10,7 @@ site_url: https://determined-aryabhata-518306.netlify.app/
 
 logo_url: https://determined-aryabhata-518306.netlify.app/logo.svg
 
-locale: 'id'
+locale: 'it'
 
 collections:
   - name: 'eventi' # Used in routes, e.g., /admin/collections/blog
