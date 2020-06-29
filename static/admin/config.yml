@@ -28,7 +28,7 @@ collections:
           name: 'date',
           hint: "La data dell'evento",
           widget: 'datetime',
-          format: 'YYYY--MM-DD',
+          format: 'YYYY-MM-DD',
           timeFormat: false,
         }
       - {
