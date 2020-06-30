@@ -1,5 +1,5 @@
 ---
-icon: fas fa-route
+icon: flaticon-earthquake
 ---
 
-Progetta e perfeziona il modello per la simulazione delle alluvioni
+Progetta e perfeziona la piattaforma mobile per la simulazione delle scosse sismiche

@@ -19,8 +19,8 @@
     {{$eventPage := .GetPage "eventi"}}
     <a href="/eventi">
       <!--  prettier-ignore -->
-      {{range first 2 (sort  $eventPage.Resources "Name" "desc")}}
-      {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "id" .File.BaseFileName "mini" true) }}
+      {{range first 2 (sort  $eventPage.Resources ".Params.date.Unix" "desc")}}
+      {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "mini" true) }}
       {{end}}
     </a>
   </div>

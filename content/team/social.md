@@ -1,5 +1,5 @@
 ---
-icon: fas fa-share-alt-square
+icon: flaticon-share
 ---
 
-Progetta e perfeziona il modello per la simulazione delle alluvioni
+Si occupa della comunicazione sulle piattaforme social

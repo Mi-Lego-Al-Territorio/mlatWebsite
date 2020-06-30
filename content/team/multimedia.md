@@ -1,5 +1,5 @@
 ---
-icon: fas fa-video
+icon: flaticon-video-camera
 ---
 
-Progetta e perfeziona il modello per la simulazione delle alluvioni
+Pensa e realizza i video e contenuti multimediali per la comunicazione delle attività del team

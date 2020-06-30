@@ -18,8 +18,8 @@ collections:
     folder: 'content/eventi' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    delete: false
     description: 'Gli eventi del team'
+    preview_path: 'eventi'
     fields: # The fields for each document, usually in front matter
       - { label: 'Titolo', name: 'title', widget: 'string' }
       - { label: 'Luogo', name: 'place', widget: 'string' }
@@ -38,3 +38,43 @@ collections:
           allow_multiple: false,
         }
       - { label: 'Descrizione', name: 'body', widget: 'markdown' }
+  - name: 'partners' # Used in routes, e.g., /admin/collections/blog
+    label: 'Partners' # Used in the UI
+    folder: 'content/partners' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    description: 'I partners del team'
+    preview_path: 'partners'
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Nome', name: 'name', widget: 'string' }
+      - {
+          label: 'Link',
+          name: 'link',
+          widget: 'string',
+          pattern:
+            [
+              'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
+              'Non è un link',
+            ],
+        }
+      - {
+          label: 'Logo',
+          name: 'imgPath',
+          widget: 'image',
+          allow_multiple: false,
+        }
+  - name: 'team' # Used in routes, e.g., /admin/collections/blog
+    label: 'Team' # Used in the UI
+    folder: 'content/team' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    description: 'Le aree del team'
+    preview_path: 'team'
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Nome', name: 'name', widget: 'string' }
+      - {
+          label: 'Icona',
+          name: 'icon',
+          helper_text: "classe css dell'icona di flaticon",
+          widget: 'string',
+        }

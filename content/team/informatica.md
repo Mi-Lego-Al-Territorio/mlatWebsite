@@ -1,5 +1,5 @@
 ---
-icon: fas fa-laptop-code
+icon: flaticon-coding
 ---
 
-Progetta e perfeziona il modello per la simulazione delle alluvioni
+Progetta e mantiene il sito e i servizi informatici

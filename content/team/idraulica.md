@@ -1,5 +1,5 @@
 ---
-icon: fas fa-water
+icon: flaticon-flood
 ---
 
-Progetta e perfeziona il modello per la simulazione delle alluvioni
+Progetta e perfeziona il modello per la simulazione di alluvioni

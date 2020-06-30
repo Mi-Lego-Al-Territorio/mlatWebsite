@@ -13,7 +13,9 @@
   <div class="team-descriptions">
     {{range .Resources}}
     <div class="groupCard" id="{{.File.BaseFileName}}">
-      <i class="{{.Params.icon}}"></i>
+      <div class="icon-container">
+        <i class="{{.Params.icon}}"></i>
+      </div>
       <div class="group-info">
         <h2>{{.File.BaseFileName}}</h2>
         <p>{{.Content}}</p>
