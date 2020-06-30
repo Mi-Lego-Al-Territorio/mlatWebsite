@@ -6,27 +6,38 @@ nav {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: $menu-shadow;
   transition: $menu-transtion-time ease-out;
   width: $menu-icons-width;
   overflow: hidden;
-  
+
   #menu-toggle:checked ~ &,
   &:hover {
-    width: calc(#{$menu-icons-width} + #{$menu-links-width})
-  } 
+    width: calc(#{$menu-icons-width} + #{$menu-links-width});
+  }
+
+  @include media('<tablet') {
+    transform: translateX(-$menu-links-width - $menu-icons-width);
+    background-color: $color-fill-light;
+
+    #menu-toggle:checked ~ &,
+    &:hover {
+      transform: translateX(0);
+      width: calc(#{$menu-icons-width} + #{$menu-links-width});
+    }
+  }
 }
 
 nav > a {
   padding: 5vh 0;
   display: flex;
   width: calc(#{$menu-icons-width} + #{$menu-links-width});
-  
+
   &:hover {
     color: $color-fill;
   }
-  
+
   &.menu-active {
     color: $color-title;
     cursor: default;
@@ -36,18 +47,4 @@ nav > a {
 nav > a > i {
   flex-shrink: 0;
   width: $menu-icons-width;
-  
-  @include centerIcon(2rem);
-  @include media('<tablet') {
-    transform: translateX(-$menu-links-width - $menu-icons-width);
-    background-color: $color-fill-light;
-  }
-}
-
-nav > a > h2 {  
-  @include media('<tablet') {
-    transform: translateX(-$menu-links-width - $menu-icons-width);
-    background-color: $color-fill-light;
-    box-shadow: none;
-  }
 }

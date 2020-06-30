@@ -29,7 +29,6 @@
     <header>
       <a href="/"><h1>{{$.Site.Title}}</h1> </a>
       <a href="/"><img src="/logo.svg" /></a>
-      <!-- <i class="flaticon-business"></i> -->
     </header>
     <div class="header-shadow"></div>
     <div id="overlay"></div>
@@ -41,19 +40,18 @@
     </label>
 
     <nav>
-      {{$mainMenu := $.Site.Menus.main }}
+      {{$mainMenu := $.Site.Menus.main }} {{range $mainMenu }}
       <!--  prettier-ignore -->
-      {{range $mainMenu }}
       {{ if $.Page.IsMenuCurrent "main" . }}
-      <a href="{{.URL}}" class="menu-active">
+      <a href="{{.URL}}" class="menu-active"> </a>
       {{else}}
       <a href="{{.URL}}">
-      {{end}}
-        <i class="{{.Pre}}"></i><h2>{{.Name}}</h2>
+        <i class="{{.Pre}}"></i>
+        <h2>{{.Name}}</h2>
       </a>
-      {{end}}
+      {{end}} {{end}}
     </nav>
-    
+
     <div class="centermain">
       <main>
         {{ block "title" . }}
