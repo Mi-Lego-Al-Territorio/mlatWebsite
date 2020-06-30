@@ -40,24 +40,20 @@
       <span></span>
     </label>
 
-    <div class="menu-icons">
+    <nav>
       {{$mainMenu := $.Site.Menus.main }}
       <!--  prettier-ignore -->
       {{range $mainMenu }}
       {{ if $.Page.IsMenuCurrent "main" . }}
-      <a href="{{.URL}}"><i class="{{.Pre}} menu-active"></i> </a>
+      <a href="{{.URL}}" class="menu-active">
       {{else}}
-      <a href="{{.URL}}"><i class="{{.Pre}}"></i> </a>
-      {{end}} {{end}}
-    </div>
-    <div class="menu-names">
-      {{range $.Site.Menus.main}} {{ if $.Page.IsMenuCurrent "main" . }}
-      <a href="{{.URL}}"><h2 class="menu-active">{{.Name}}</h2></a>
-      {{else}}
-      <a href="{{.URL}}"><h2>{{.Name}}</h2></a>
-      {{end}} {{end}}
-    </div>
-
+      <a href="{{.URL}}">
+      {{end}}
+        <i class="{{.Pre}}"></i><h2>{{.Name}}</h2>
+      </a>
+      {{end}}
+    </nav>
+    
     <div class="centermain">
       <main>
         {{ block "title" . }}

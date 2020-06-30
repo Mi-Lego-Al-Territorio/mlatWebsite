@@ -1,52 +1,53 @@
-@mixin commonMenu() {
+nav {
   position: fixed;
   top: $header-height;
   height: calc(100% - #{$header-height});
   background-color: $color-bkg;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: $menu-shadow;
   transition: $menu-transtion-time ease-out;
+  width: $menu-icons-width;
+  overflow: hidden;
+  
+  #menu-toggle:checked ~ &,
+  &:hover {
+    width: calc(#{$menu-icons-width} + #{$menu-links-width})
+  } 
 }
 
-.menu-icons {
-  @include commonMenu();
-  @include distribute-vertically();
-  width: $menu-icons-width;
-  @include centerIcon(2rem);
-  z-index: 2;
-  #menu-toggle:checked ~ &,
-  &:hover,
-  &:hover ~ .menu-names {
-    transform: translateX(0);
+nav > a {
+  padding: 5vh 0;
+  display: flex;
+  width: calc(#{$menu-icons-width} + #{$menu-links-width});
+  
+  &:hover {
+    color: $color-fill;
   }
+  
+  &.menu-active {
+    color: $color-title;
+    cursor: default;
+  }
+}
+
+nav > a > i {
+  flex-shrink: 0;
+  width: $menu-icons-width;
+  
+  @include centerIcon(2rem);
   @include media('<tablet') {
     transform: translateX(-$menu-links-width - $menu-icons-width);
     background-color: $color-fill-light;
   }
 }
 
-.menu-names {
-  @include commonMenu();
-  @include distribute-vertically();
-  transition: $menu-transtion-time ease-out;
-  left: $menu-icons-width;
-  width: $menu-links-width;
-  transform: translateX(-$menu-links-width);
-  box-shadow: $menu-shadow;
-  z-index: 1;
-  h2 {
-    transition: $menu-transtion-time ease-out;
-  }
-
-  #menu-toggle:checked ~ &,
-  &:hover {
-    transform: translateX(0);
-  }
+nav > a > h2 {  
   @include media('<tablet') {
     transform: translateX(-$menu-links-width - $menu-icons-width);
     background-color: $color-fill-light;
     box-shadow: none;
   }
-}
-
-.menu-active {
-  color: $color-title;
 }

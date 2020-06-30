@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 3;
   #menu-toggle:checked ~ & {
     @include media('<tablet') {
       background-color: $color-fill;
@@ -48,7 +48,7 @@ header {
 }
 
 label[for='menu-toggle'] {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: ($header-height/2)- ($ham-line-height * 3 + $ham-margin-top-bottom * 4) /
     2;
