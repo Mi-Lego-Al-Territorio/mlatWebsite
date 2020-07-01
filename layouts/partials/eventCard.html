@@ -5,9 +5,12 @@
     <h1 class="eventCard-name">{{.title}}</h1>
     {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
   </div>
+  <input type="checkbox" id="event-toggle-{{.Params.title}}" />
   <!-- prettier-ignore -->
   {{ partial "image.html" (dict "path" ((replace .imgPath "/assets/images/" "") | printf "images/%s") "alt" .title) }}
  {{if not .mini}}
-  <i class="flaticon-more"></i>
+  <label>
+    <i class="flaticon-more"></i>
+  </label>
   {{end}}
 </div>

@@ -43,7 +43,10 @@
       {{$mainMenu := $.Site.Menus.main }} {{range $mainMenu }}
       <!--  prettier-ignore -->
       {{ if $.Page.IsMenuCurrent "main" . }}
-      <a href="{{.URL}}" class="menu-active"> </a>
+      <a href="{{.URL}}" class="menu-active">
+        <i class="{{.Pre}}"></i>
+        <h2>{{.Name}}</h2>
+      </a>
       {{else}}
       <a href="{{.URL}}">
         <i class="{{.Pre}}"></i>
