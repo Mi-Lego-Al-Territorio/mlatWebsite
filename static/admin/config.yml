@@ -20,7 +20,7 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'Gli eventi del team'
     preview_path: 'eventi'
-    filter: [field: 'showCMS', value: 'true']
+    filter: [field: 'showCMS', value: true]
     fields: # The fields for each document, usually in front matter
       - { label: 'Titolo', name: 'title', widget: 'string', required: true }
       - { label: 'Luogo', name: 'place', widget: 'string', required: true }
