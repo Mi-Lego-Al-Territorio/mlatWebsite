@@ -8,4 +8,5 @@ menu:
     pre: flaticon-calendar
     weight: 3
 layout: eventi
+showCMS: false
 ---

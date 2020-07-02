@@ -20,9 +20,10 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'Gli eventi del team'
     preview_path: 'eventi'
+    filter: [field: 'showCMS', value: 'true']
     fields: # The fields for each document, usually in front matter
-      - { label: 'Titolo', name: 'title', widget: 'string' }
-      - { label: 'Luogo', name: 'place', widget: 'string' }
+      - { label: 'Titolo', name: 'title', widget: 'string', required: true }
+      - { label: 'Luogo', name: 'place', widget: 'string', required: true }
       - {
           label: 'Data',
           name: 'date',
@@ -30,14 +31,21 @@ collections:
           widget: 'datetime',
           format: 'YYYY-MM-DD',
           timeFormat: false,
+          required: true,
         }
       - {
           label: 'Foto',
           name: 'imgPath',
           widget: 'image',
           allow_multiple: false,
+          required: true,
         }
-      - { label: 'Descrizione', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Descrizione',
+          name: 'body',
+          widget: 'markdown',
+          required: true,
+        }
   - name: 'partners' # Used in routes, e.g., /admin/collections/blog
     label: 'Partners' # Used in the UI
     folder: 'content/partners' # The path to the folder where the documents are stored
@@ -46,11 +54,12 @@ collections:
     description: 'I partners del team'
     preview_path: 'partners'
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome', name: 'name', widget: 'string' }
+      - { label: 'Nome', name: 'name', widget: 'string', required: true }
       - {
           label: 'Link',
           name: 'link',
           widget: 'string',
+          required: true,
           pattern:
             [
               'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
@@ -62,6 +71,7 @@ collections:
           name: 'imgPath',
           widget: 'image',
           allow_multiple: false,
+          required: true,
         }
   - name: 'team' # Used in routes, e.g., /admin/collections/blog
     label: 'Team' # Used in the UI
@@ -71,10 +81,11 @@ collections:
     description: 'Le aree del team'
     preview_path: 'team'
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome', name: 'name', widget: 'string' }
+      - { label: 'Nome', name: 'name', widget: 'string', required: true }
       - {
           label: 'Icona',
           name: 'icon',
           helper_text: "classe css dell'icona di flaticon",
           widget: 'string',
+          required: true,
         }
