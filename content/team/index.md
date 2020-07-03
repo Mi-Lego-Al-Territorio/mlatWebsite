@@ -11,6 +11,5 @@ menu:
     weight: 1
     url: /team
 layout: team
+showCMS: false
 ---
-
-Ciao come stai

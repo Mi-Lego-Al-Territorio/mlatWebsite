@@ -4,6 +4,8 @@ backend:
 
 publish_mode: editorial_workflow
 
+local_backend: true
+
 media_folder: 'assets/images' # Media files will be stored in the repo under assets/images
 
 site_url: https://determined-aryabhata-518306.netlify.app/
@@ -20,7 +22,7 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'Gli eventi del team'
     preview_path: 'eventi'
-    filter: [field: 'showCMS', value: true]
+    filter: { field: 'showCMS', value: true }
     fields: # The fields for each document, usually in front matter
       - { label: 'Titolo', name: 'title', widget: 'string', required: true }
       - { label: 'Luogo', name: 'place', widget: 'string', required: true }
@@ -46,6 +48,13 @@ collections:
           widget: 'markdown',
           required: true,
         }
+      - {
+          label: 'LASCIAMI ATTIVO',
+          name: 'showCMS',
+          widget: 'boolean',
+          required: true,
+          default: true,
+        }
   - name: 'partners' # Used in routes, e.g., /admin/collections/blog
     label: 'Partners' # Used in the UI
     folder: 'content/partners' # The path to the folder where the documents are stored
@@ -53,8 +62,9 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'I partners del team'
     preview_path: 'partners'
+    filter: { field: 'showCMS', value: true }
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome', name: 'name', widget: 'string', required: true }
+      - { label: 'Nome', name: 'title', widget: 'string', required: true }
       - {
           label: 'Link',
           name: 'link',
@@ -73,6 +83,13 @@ collections:
           allow_multiple: false,
           required: true,
         }
+      - {
+          label: 'LASCIAMI ATTIVO',
+          name: 'showCMS',
+          widget: 'boolean',
+          required: true,
+          default: true,
+        }
   - name: 'team' # Used in routes, e.g., /admin/collections/blog
     label: 'Team' # Used in the UI
     folder: 'content/team' # The path to the folder where the documents are stored
@@ -80,12 +97,20 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'Le aree del team'
     preview_path: 'team'
+    filter: { field: 'showCMS', value: true }
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome', name: 'name', widget: 'string', required: true }
+      - { label: 'Nome team', name: 'name', widget: 'string', required: true }
       - {
           label: 'Icona',
           name: 'icon',
-          helper_text: "classe css dell'icona di flaticon",
+          hint: "classe css dell'icona di flaticon",
           widget: 'string',
           required: true,
+        }
+      - {
+          label: 'LASCIAMI ATTIVO',
+          name: 'showCMS',
+          widget: 'boolean',
+          required: true,
+          default: true,
         }

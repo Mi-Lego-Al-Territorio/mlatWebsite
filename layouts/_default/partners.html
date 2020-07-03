@@ -4,8 +4,8 @@
   <a href="{{.Params.link}}" target="_blank">
     <div class="partners-card">
       <!-- prettier-ignore -->
-      {{partial "image.html" (dict "path" ((replace .Params.imgPath "/assets/images/" "") | printf "images/%s") "alt" .Params.name )}}
-      <h2>{{.Params.name}}</h2>
+      {{partial "image.html" (dict "path" ((replace .Params.imgPath "/assets/images/" "") | printf "images/%s") "alt" .Title )}}
+      <h2>{{.Title}}</h2>
     </div>
   </a>
   {{end}}
