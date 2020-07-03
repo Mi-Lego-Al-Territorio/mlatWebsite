@@ -12,7 +12,7 @@
     />
 
     <!--  prettier-ignore -->
-    {{ $style := resources.Get "sass/base.scss"|toCSS | postCSS | minify | fingerprint}}
+    {{ $style := resources.Get "sass/base.scss"| toCSS  | minify | fingerprint}}
     <link href="{{$style.RelPermalink}}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/flaticon/flaticon.css" />
     <script
