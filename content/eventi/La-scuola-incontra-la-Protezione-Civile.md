@@ -2,7 +2,7 @@
 title: La scuola incontra la Protezione Civile
 place: Torino
 date: 2019-11-06
-imgPath: /assets/images/la-scuola-incontra-la-protezione-civile.jpg
+imgPath: /assets/images/la-scuola-incontra-2019.jpg
 showCMS: true
 ---
 

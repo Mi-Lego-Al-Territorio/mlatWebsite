@@ -2,7 +2,7 @@
 title: JUMP Croce Rossa Italiana
 place: Milano
 date: 2019-11-29
-imgPath: /assets/images/jump-croce-rossa-italiana.jpg
+imgPath: /assets/images/jump-2019.jpg
 showCMS: true
 ---
 
