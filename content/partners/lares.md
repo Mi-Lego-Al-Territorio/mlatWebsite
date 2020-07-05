@@ -1,6 +1,6 @@
 ---
 title: Lares
 link: http://www.uniprotezionecivile.it/
-imgPath: /assets/images/lares.jpg
+imgPath: /assets/images/lares.png
 showCMS: true
 ---

@@ -1,10 +1,18 @@
 {{/* eventCard.html */}}
 <div class="eventCard">
+  {{if eq (len .content) 0}}
+  <div class="eventCard-info just-cont-center">
+    <h2 class="eventCard-date">{{.date.Format "02/01/2006"}} - {{.place}}</h2>
+    <h1 class="eventCard-name">{{.title}}</h1>
+    {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
+  </div>
+  {{else}}
   <div class="eventCard-info">
     <h2 class="eventCard-date">{{.date.Format "02/01/2006"}} - {{.place}}</h2>
     <h1 class="eventCard-name">{{.title}}</h1>
     {{ if .mini }} {{truncate 80 .content }}{{else}} {{.content}} {{end}}
   </div>
+  {{end}}
   <!-- prettier-ignore -->
   {{ partial "image.html" (dict "path" ((replace .imgPath "/assets/images/" "") | printf "images/%s") "alt" .title) }}
  {{if not .mini}}
