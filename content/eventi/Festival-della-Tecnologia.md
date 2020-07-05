@@ -2,7 +2,7 @@
 title: Festival della Tecnologia
 place: Torino
 date: 2019-11-07
-imgPath: /assets/images/festival-della-tecnologia.jpg
+imgPath: /assets/images/festival-della-tecnologia-2019.jpg
 showCMS: true
 ---
 

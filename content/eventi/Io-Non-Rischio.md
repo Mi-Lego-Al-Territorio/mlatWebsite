@@ -2,7 +2,7 @@
 title: Io Non Rischio
 place: Vecchiano
 date: 2019-10-13
-imgPath: /assets/images/io-non-rischio.jpg
+imgPath: /assets/images/Vecchiano-2019.jpg
 showCMS: true
 ---
 

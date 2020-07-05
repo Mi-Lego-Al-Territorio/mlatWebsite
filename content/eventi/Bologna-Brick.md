@@ -2,7 +2,7 @@
 title: Bologna Brick
 place: Torino
 date: 2019-10-27
-imgPath: /assets/images/bologna-brick.jpg
+imgPath: /assets/images/Bologna-brick-2019.jpg
 showCMS: true
 ---
 
