@@ -1,6 +1,8 @@
 ---
-name: multimedia
+title: multimedia
 icon: flaticon-video-camera
+members:
+  - name:
 showCMS: true
 ---
 

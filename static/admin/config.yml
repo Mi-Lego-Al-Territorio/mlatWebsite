@@ -24,37 +24,35 @@ collections:
     preview_path: 'eventi'
     filter: { field: 'showCMS', value: true }
     fields: # The fields for each document, usually in front matter
-      - { label: 'Titolo', name: 'title', widget: 'string', required: true }
-      - { label: 'Luogo', name: 'place', widget: 'string', required: true }
-      - {
-          label: 'Data',
-          name: 'date',
-          hint: "La data dell'evento",
-          widget: 'datetime',
-          format: 'YYYY-MM-DD',
-          timeFormat: false,
-          required: true,
-        }
-      - {
-          label: 'Foto',
-          name: 'imgPath',
-          widget: 'image',
-          allow_multiple: false,
-          required: true,
-        }
-      - {
-          label: 'Descrizione',
-          name: 'body',
-          widget: 'markdown',
-          required: true,
-        }
-      - {
-          label: 'LASCIAMI ATTIVO',
-          name: 'showCMS',
-          widget: 'boolean',
-          required: true,
-          default: true,
-        }
+      - label: 'Titolo'
+        name: 'title'
+        widget: 'string'
+        required: true
+      - label: 'Luogo'
+        name: 'place'
+        widget: 'string'
+        required: true
+      - label: 'Data'
+        name: 'date'
+        hint: "La data dell'evento"
+        widget: 'datetime'
+        format: 'YYYY-MM-DD'
+        timeFormat: false
+        required: true
+      - label: 'Foto'
+        name: 'imgPath'
+        widget: 'image'
+        allow_multiple: false
+        required: true
+      - label: 'Descrizione'
+        name: 'body'
+        widget: 'markdown'
+        required: true
+      - label: 'LASCIAMI ATTIVO'
+        name: 'showCMS'
+        widget: 'boolean'
+        required: true
+        default: true
   - name: 'partners' # Used in routes, e.g., /admin/collections/blog
     label: 'Partners' # Used in the UI
     folder: 'content/partners' # The path to the folder where the documents are stored
@@ -64,32 +62,29 @@ collections:
     preview_path: 'partners'
     filter: { field: 'showCMS', value: true }
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome', name: 'title', widget: 'string', required: true }
-      - {
-          label: 'Link',
-          name: 'link',
-          widget: 'string',
-          required: true,
-          pattern:
-            [
-              'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
-              'Non è un link',
-            ],
-        }
-      - {
-          label: 'Logo',
-          name: 'imgPath',
-          widget: 'image',
-          allow_multiple: false,
-          required: true,
-        }
-      - {
-          label: 'LASCIAMI ATTIVO',
-          name: 'showCMS',
-          widget: 'boolean',
-          required: true,
-          default: true,
-        }
+      - label: 'Nome'
+        name: 'title'
+        widget: 'string'
+        required: true
+      - label: 'Link'
+        name: 'link'
+        widget: 'string'
+        required: true
+        pattern:
+          [
+            'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
+            'Non è un link',
+          ]
+      - label: 'Logo'
+        name: 'imgPath'
+        widget: 'image'
+        allow_multiple: false
+        required: true
+      - label: 'LASCIAMI ATTIVO'
+        name: 'showCMS'
+        widget: 'boolean'
+        required: true
+        default: true
   - name: 'team' # Used in routes, e.g., /admin/collections/blog
     label: 'Team' # Used in the UI
     folder: 'content/team' # The path to the folder where the documents are stored
@@ -97,20 +92,37 @@ collections:
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     description: 'Le aree del team'
     preview_path: 'team'
-    filter: { field: 'showCMS', value: true }
+    filter:
+      field: 'showCMS'
+      value: true
     fields: # The fields for each document, usually in front matter
-      - { label: 'Nome team', name: 'title', widget: 'string', required: true }
-      - {
-          label: 'Icona',
-          name: 'icon',
-          hint: "classe css dell'icona di flaticon",
-          widget: 'string',
-          required: true,
-        }
-      - {
-          label: 'LASCIAMI ATTIVO',
-          name: 'showCMS',
-          widget: 'boolean',
-          required: true,
-          default: true,
-        }
+      - label: 'Nome team'
+        name: 'title'
+        widget: 'string'
+        required: true
+      - label: 'Icona'
+        name: 'icon'
+        hint: "classe css dell'icona di flaticon"
+        widget: 'string'
+        required: true
+      - label: 'Membri'
+        name: 'members'
+        widget: 'list'
+        fields:
+          - label: Nome
+            name: name
+            widget: string
+          - label: Link
+            name: link
+            widget: string
+            pattern:
+              [
+                'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
+                'Non è un link',
+              ]
+        required: true
+      - label: 'LASCIAMI ATTIVO'
+        name: 'showCMS'
+        widget: 'boolean'
+        required: true
+        default: true

@@ -1,6 +1,8 @@
 ---
-name: idraulica
+title: idraulica
 icon: flaticon-flood
+members:
+  - name: Matteo Buffa
 showCMS: true
 ---
 

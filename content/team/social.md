@@ -1,6 +1,8 @@
 ---
-name: social
+title: social
 icon: flaticon-share
+members:
+  - name: Federico Walter Ruscalla
 showCMS: true
 ---
 
