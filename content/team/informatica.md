@@ -5,6 +5,7 @@ members:
   - name: Gabriele Filaferro
     link: https://www.linkedin.com/in/gabriele-filaferro/
   - name: Nico Caprioli
+    link: https://www.linkedin.com/in/nico-caprioli/
 showCMS: true
 ---
 

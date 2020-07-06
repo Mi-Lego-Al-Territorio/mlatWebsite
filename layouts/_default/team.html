@@ -18,9 +18,12 @@
       </div>
       <div class="group-info">
         <h2>{{.Title}}</h2>
-        <p>{{.Content}}</p>
+        {{.Content}}
         <br />
-        Membri: {{$membersSorted := sort .Params.Members "name" }}
+        <b>
+          Membri:
+        </b>
+        {{$membersSorted := sort .Params.Members "name" }}
         <ul class="group-members">
           {{range $membersSorted}}
           <li>
