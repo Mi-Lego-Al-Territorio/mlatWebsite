@@ -34,10 +34,11 @@ nav > a {
   display: flex;
   width: calc(#{$menu-icons-width} + #{$menu-links-width});
 
-  &:hover {
-    color: $color-fill;
+  @include media('>phone') {
+    &:hover {
+      color: $color-fill;
+    }
   }
-
   &.menu-active {
     color: $color-title;
     cursor: default;

@@ -4,6 +4,7 @@ icon: flaticon-flood
 members:
   - name: Matteo Buffa
     link: https://www.linkedin.com/in/matteo-buffa-10316b135/
+  - name: Marco Bandini
 showCMS: true
 ---
 

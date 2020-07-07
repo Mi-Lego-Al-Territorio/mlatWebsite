@@ -10,10 +10,7 @@
     </div>
     <div class="step-info">
       <h2>{{.Title}}</h2>
-      <p>
-        La nostra proposta di attivtà con bambini e ragazzi si articola in 6
-        slot, alternandosi tra momenti frontali, sperimentali ed interattivi
-      </p>
+      {{.Content}}
     </div>
   </div>
   <!--  prettier-ignore -->
@@ -54,8 +51,10 @@
     </div>
     <div class="step-info">
       <h2>Se hai bisogno di altre info contattaci!</h2>
-      {{ with $.Site.Param "mails"}} Curiosità? Scrivi a
-      <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+      <p>
+        {{ with $.Site.Param "mails"}} Curiosità? Scrivi a
+        <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+      </p>
     </div>
   </div>
   <div class="education-navigator">

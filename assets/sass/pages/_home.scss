@@ -48,8 +48,15 @@
     flex-direction: column;
     align-items: flex-end;
 
+    &-title {
+      color: $color-title;
+      width: 100%;
+      text-align: center;
+    }
+
     @include media('<tablet') {
       align-items: center;
+      margin: 20px 0;
     }
     @include eventCard(true, false);
   }

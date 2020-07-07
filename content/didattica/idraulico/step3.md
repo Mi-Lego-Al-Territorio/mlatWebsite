@@ -6,4 +6,4 @@ min: 10
 icon: flaticon-jigsaw
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium voluptatem harum. Iste dolor itaque asperiores at laudantium quae reprehenderit unde commodi maxime expedita aspernatur esse, odio nesciunt velit, quia doloremque quos illum eos cupiditate dicta illo
+A fine attività verrà chiesto ai ragazzi di realizzare delle strutture sicure coi mattoncini sul nostro modellino idraulico e si studierà la loro efficacia simulando l'esondazione di un fiume allagando il modellino. Infine, verranno analizzati sul modello alcuni eventi idrogeologici citati e si progetterá insieme ai ragazzi dei sistemi di protezione osservati negli step precedenti.

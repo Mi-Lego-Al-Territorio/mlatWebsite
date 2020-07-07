@@ -6,4 +6,4 @@ min: 10
 icon: flaticon-jigsaw
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium voluptatem harum. Iste dolor itaque asperiores at laudantium quae reprehenderit unde commodi maxime expedita aspernatur esse, odio nesciunt velit, quia doloremque quos illum eos cupiditate dicta illo
+A fine attività verrà chiesto ai ragazzi di mettersi alla prova costruendo una struttura antisismica fatta di Lego seguendo le specifiche da noi indicate. Il modello realizzato dai ragazzi sarà poi sottoposto a diverse sollecitazioni mediante una pedana vibrante, interamente in lego, e confrontato con una struttura antisismica di nostra realizzazione per valutarne la stabilità.

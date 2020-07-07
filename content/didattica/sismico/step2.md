@@ -6,4 +6,4 @@ min: 20
 icon: flaticon-shapes-and-symbols
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium voluptatem harum. Iste dolor itaque asperiores at laudantium quae reprehenderit unde commodi maxime expedita aspernatur esse, odio nesciunt velit, quia doloremque quos illum eos cupiditate dicta illo
+Per invogliare i ragazzi a prestare attenzione alla spiegazione teorica, è previsto un quiz interattivo che punta ad accertare l’acquisizione dei concetti espressi durante la lezione e a premiare gli studenti con il punteggio più alto. Il premio è segreto e verrà inviato direttamente allo studente (o ai professori) una volta accertati i vincitori.

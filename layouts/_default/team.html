@@ -1,17 +1,17 @@
 {{ define "content"}}
 <div class="team">
   <div class="team-icons">
-    {{range .Resources}}
+    {{range .Resources}} {{if ne .Params.members nil}}
     <div class="groupIcon">
       <a href="#{{.File.BaseFileName}}">
         <i class="{{.Params.icon}}"></i>
         <h2>{{.Title}}</h2>
       </a>
     </div>
-    {{end}}
+    {{end}} {{end}}
   </div>
   <div class="team-descriptions">
-    {{range .Resources}}
+    {{range .Resources}} {{if ne .Params.members nil}}
     <div class="groupCard" id="{{.Title}}">
       <div class="icon-container">
         <i class="{{.Params.icon}}"></i>
@@ -36,7 +36,7 @@
         </ul>
       </div>
     </div>
-    {{end}}
+    {{end}}{{end}}
   </div>
 </div>
 {{end}}

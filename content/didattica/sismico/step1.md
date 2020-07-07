@@ -6,4 +6,4 @@ min: 30
 icon: flaticon-education
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium voluptatem harum. Iste dolor itaque asperiores at laudantium quae reprehenderit unde commodi maxime expedita aspernatur esse, odio nesciunt velit, quia doloremque quos illum eos cupiditate dicta illo
+Disponendo di una presentazione Power Point appositamente preparata per la classe e contestualizzata in base alla regione della scuola, si affronta insieme ai ragazzi un percorso in cui vengono spiegati i concetti teorici che determinano le origini e conseguenze di un terremoto, ed i corretti atteggiamenti da seguire durante eventi di natura sismica.
