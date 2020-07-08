@@ -1,3 +1,5 @@
+# Netlify CMS configuration
+
 backend:
   name: git-gateway
   branch: master # Branch to update
@@ -6,108 +8,140 @@ publish_mode: editorial_workflow
 
 local_backend: true
 
-media_folder: 'assets/images' # Media files will be stored in the repo under assets/images
+media_folder: assets/images # Media files will be stored in the repo under assets/images
 
 site_url: https://determined-aryabhata-518306.netlify.app/
 
 logo_url: https://determined-aryabhata-518306.netlify.app/logo.svg
 
-locale: 'it'
+locale: it
 
 collections:
-  - name: 'eventi' # Used in routes, e.g., /admin/collections/blog
-    label: 'Eventi' # Used in the UI
-    folder: 'content/eventi' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    description: 'Gli eventi del team'
-    preview_path: 'eventi'
-    filter: { field: 'showCMS', value: true }
-    fields: # The fields for each document, usually in front matter
-      - label: 'Titolo'
-        name: 'title'
-        widget: 'string'
+  - name: general
+    label: Generale
+    description: Configurazione elementi particolari
+    files:
+      - label: Chi siamo
+        name: about
+        file: content/_index.md
+        fields:
+          - label: Chi siamo
+            name: body
+            widget: markdown
+      - label: Motto e socials
+        name: params
+        file: config/_default/params.yaml
+        fields:
+          - label: Motto
+            name: motto
+            widget: string
+          - label: Link social
+            name: socials
+            widget: list
+            fields:
+              - label: classe CSS icona
+                name: icon
+                widget: string
+              - label: Link alla pagina social
+                name: link
+                widget: string
+  - name: eventi
+    label: Eventi
+    folder: content/eventi
+    create: true
+    slug: '{{slug}}'
+    description: Gli eventi del team
+    preview_path: eventi
+    filter:
+      field: showCMS
+      value: true
+    fields:
+      - label: Titolo
+        name: title
+        widget: string
         required: true
-      - label: 'Luogo'
-        name: 'place'
-        widget: 'string'
+      - label: Luogo
+        name: place
+        widget: string
         required: true
-      - label: 'Data'
-        name: 'date'
-        hint: "La data dell'evento"
-        widget: 'datetime'
-        format: 'YYYY-MM-DD'
+      - label: Data
+        name: date
+        hint: La data dell'evento
+        widget: datetime
+        format: YYYY-MM-DD
         timeFormat: false
         required: true
-      - label: 'Foto'
-        name: 'imgPath'
-        widget: 'image'
+      - label: Foto
+        name: imgPath
+        widget: image
         allow_multiple: false
         required: true
-      - label: 'Descrizione'
-        name: 'body'
-        widget: 'markdown'
+      - label: Descrizione
+        name: body
+        widget: markdown
         required: true
-      - label: 'LASCIAMI ATTIVO'
-        name: 'showCMS'
-        widget: 'boolean'
+      - label: LASCIAMI ATTIVO
+        name: showCMS
+        widget: boolean
         required: true
         default: true
-  - name: 'partners' # Used in routes, e.g., /admin/collections/blog
-    label: 'Partners' # Used in the UI
-    folder: 'content/partners' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    description: 'I partners del team'
-    preview_path: 'partners'
-    filter: { field: 'showCMS', value: true }
-    fields: # The fields for each document, usually in front matter
-      - label: 'Nome'
-        name: 'title'
-        widget: 'string'
+  - name: partners
+    label: Partners
+    folder: content/partners
+    create: true
+    slug: '{{slug}}'
+    description: I partners del team
+    preview_path: partners
+    filter:
+      field: showCMS
+      value: true
+    fields:
+      - label: Nome
+        name: title
+        widget: string
         required: true
-      - label: 'Link'
-        name: 'link'
-        widget: 'string'
+      - label: Link
+        name: link
+        widget: string
         required: true
         pattern:
           [
             'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
-            'Non è un link',
+            Non è un link,
           ]
-      - label: 'Logo'
-        name: 'imgPath'
-        widget: 'image'
+      - label: Logo
+        name: imgPath
+        widget: image
         allow_multiple: false
         required: true
-      - label: 'LASCIAMI ATTIVO'
-        name: 'showCMS'
-        widget: 'boolean'
+      - label: LASCIAMI ATTIVO
+        name: showCMS
+        widget: boolean
         required: true
         default: true
-  - name: 'team' # Used in routes, e.g., /admin/collections/blog
-    label: 'Team' # Used in the UI
-    folder: 'content/team' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    description: 'Le aree del team'
-    preview_path: 'team'
+  - name: team
+    label: Team
+    folder: content/team
+    create: true
+    slug: '{{slug}}'
+    description: Le aree del team
+    preview_path: team
     filter:
-      field: 'showCMS'
+      field: showCMS
       value: true
-    fields: # The fields for each document, usually in front matter
-      - label: 'Nome team'
-        name: 'title'
-        widget: 'string'
+    fields:
+      - label: Nome team
+        name: title
+        widget: string
         required: true
-      - label: 'Icona'
-        name: 'icon'
-        hint: "classe css dell'icona di flaticon"
-        widget: 'string'
+      - label: Icona
+        name: icon
+        hint: classe css dell'icona di flaticon
+        widget: string
         required: true
-      - label: 'Membri'
-        name: 'members'
-        widget: 'list'
+      - label: Membri
+        name: members
+        widget: list
         fields:
           - label: Nome
             name: name
@@ -118,11 +152,11 @@ collections:
             pattern:
               [
                 'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
-                'Non è un link',
+                Non è un link,
               ]
         required: true
-      - label: 'LASCIAMI ATTIVO'
-        name: 'showCMS'
-        widget: 'boolean'
+      - label: LASCIAMI ATTIVO
+        name: showCMS
+        widget: boolean
         required: true
         default: true
