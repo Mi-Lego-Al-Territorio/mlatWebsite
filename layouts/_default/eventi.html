@@ -2,7 +2,12 @@
 <!--empty to ovveride-->
 {{end}} {{ define "content"}}
 <!--  prettier-ignore -->
-<script defer src="/events.js"></script>
+{{ $eventsJS := resources.Get "js/events.js" |minify | fingerprint}}
+<script
+  defer
+  src="{{$eventsJS.RelPermalink}}"
+  integrity="{{ $eventsJS.Data.Integrity }}"
+></script>
 <!--  prettier-ignore -->
 {{$nowUnix := now.Unix}}
 <div class="events">

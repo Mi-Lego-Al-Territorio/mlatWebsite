@@ -12,7 +12,7 @@ menu:
 activityAreas:
   - sismico
   - idraulico
-activityAreaICons:
+activityAreaIcons:
   - flaticon-earthquake
   - flaticon-flood
 showCMS: false

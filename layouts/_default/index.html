@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="lastEvents">
-    <h2 class="lastEvents-title">Alcuni eventi</h2>
+    <h2 class="lastEvents-title">Alcuni nostri eventi</h2>
     {{$eventPage := .GetPage "eventi"}}
     <a href="/eventi">
       <!--  prettier-ignore -->
@@ -26,6 +26,7 @@
     </a>
   </div>
 </div>
+<!-- Script to enable netlify login for netlify cms -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on('init', user => {

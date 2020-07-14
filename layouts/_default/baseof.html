@@ -13,7 +13,11 @@
 
     <!--  prettier-ignore -->
     {{ $style := resources.Get "sass/base.scss"| toCSS  | minify | fingerprint}}
-    <link href="{{$style.RelPermalink}}" rel="stylesheet" />
+    <link
+      href="{{$style.RelPermalink}}"
+      rel="stylesheet"
+      integrity="{{ $style.Data.Integrity }}"
+    />
     <link rel="stylesheet" type="text/css" href="/flaticon/flaticon.css" />
     <script
       src="https://kit.fontawesome.com/d1e9081e05.js"
@@ -22,7 +26,12 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
     <link rel="shortcut icon" type="image/svg+xml" href="/logo.svg" />
-    <script defer src="/index.js"></script>
+    {{ $indexJS := resources.Get "js/index.js" | minify | fingerprint}}
+    <script
+      defer
+      src="{{$indexJS.RelPermalink}}"
+      integrity="{{ $indexJS.Data.Integrity }}"
+    ></script>
   </head>
   <body class="no-display">
     <input type="checkbox" id="menu-toggle" />
@@ -44,12 +53,16 @@
       <!--  prettier-ignore -->
       {{ if $.Page.IsMenuCurrent "main" . }}
       <a href="{{.URL}}" class="menu-active">
-        <i class="{{.Pre}}"></i>
+        <div class="menu-icon-container">
+          <i class="{{.Pre}}"></i>
+        </div>
         <h2>{{.Name}}</h2>
       </a>
       {{else}}
       <a href="{{.URL}}">
-        <i class="{{.Pre}}"></i>
+        <div class="menu-icon-container">
+          <i class="{{.Pre}}"></i>
+        </div>
         <h2>{{.Name}}</h2>
       </a>
       {{end}} {{end}}

@@ -27,25 +27,26 @@ nav {
       width: calc(#{$menu-icons-width} + #{$menu-links-width});
     }
   }
-}
+  a {
+    padding: 5vh 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: calc(#{$menu-icons-width} + #{$menu-links-width});
 
-nav > a {
-  padding: 5vh 0;
-  display: flex;
-  width: calc(#{$menu-icons-width} + #{$menu-links-width});
-
-  @include media('>phone') {
-    &:hover {
-      color: $color-fill;
+    @include media('>phone') {
+      &:hover {
+        color: $color-fill;
+      }
+    }
+    .menu-icon-container {
+      @include centerIcon(1.8rem);
+      width: $menu-icons-width;
     }
   }
-  &.menu-active {
-    color: $color-title;
-    cursor: default;
-  }
 }
 
-nav > a > i {
-  flex-shrink: 0;
-  width: $menu-icons-width;
+.menu-active {
+  color: $color-title;
+  cursor: default;
 }

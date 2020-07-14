@@ -1,7 +1,13 @@
 {{ define "title"}}
 <!-- empty -->
 {{end}} {{ define "content"}}
-<script defer src="/education.js"></script>
+<!--  prettier-ignore -->
+{{ $educationJS := resources.Get "js/education.js" |minify | fingerprint}}
+<script
+  defer
+  src="{{$educationJS.RelPermalink}}"
+  integrity="{{ $educationJS.Data.Integrity }}"
+></script>
 <div class="education">
   <div class="education-step">
     <a id="start-msg" class="step-anchor"></a>
@@ -9,7 +15,7 @@
       <div class="progress-line"></div>
     </div>
     <div class="step-info">
-      <h2>{{.Params.type}}</h2>
+      <h2>{{.Title}}</h2>
       {{.Content}}
     </div>
   </div>
