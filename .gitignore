@@ -2,7 +2,7 @@
  
 ### Hugo ###
 # Generated files by hugo
-/public/
+public/
 /resources/_gen/
 
 # Executable may be added to repository
