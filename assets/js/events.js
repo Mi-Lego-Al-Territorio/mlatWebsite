@@ -1,9 +1,6 @@
 const moreBtns = document.querySelectorAll('.flaticon-more');
 const eventsDescription = document.querySelectorAll('.eventCard p');
 const eventsImgs = document.querySelectorAll('.eventCard picture');
-console.log(moreBtns);
-console.log(eventsDescription);
-console.log(eventsImgs);
 
 moreBtns.forEach((btn, idx) => {
   btn.addEventListener('click', e => {

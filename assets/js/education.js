@@ -12,9 +12,6 @@ const stepLinks = Array.from(
 const arrowUp = document.querySelector('#arrow-up');
 const arrowDown = document.querySelector('#arrow-down');
 
-console.log(steps.length);
-console.log(stepLinks.length);
-
 // function to update the step in view according to the type of user interaction
 function updateStepInView(value, direction, type) {
   stepLinks[stepInView].classList.remove('nav-highlighted');
@@ -35,7 +32,6 @@ function updateStepInView(value, direction, type) {
   if (type !== 'scroll') {
     steps[stepInView].scrollIntoView();
   }
-  console.log(stepInView);
   stepLinks[stepInView].classList.add('nav-highlighted');
 }
 
