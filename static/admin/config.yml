@@ -136,7 +136,7 @@ collections:
         required: true
       - label: Icona
         name: icon
-        hint: classe css dell'icona di flaticon
+        hint: classe css dell'icona
         widget: string
         required: true
       - label: Membri
@@ -154,6 +154,52 @@ collections:
                 'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
                 Non è un link,
               ]
+        required: true
+      - label: LASCIAMI ATTIVO
+        name: showCMS
+        widget: boolean
+        required: true
+        default: true
+  - name: education
+    label: Didattica
+    folder: content/didattica
+    create: true
+    slug: '{{slug}}'
+    description: L'offerta didattica del team
+    preview_path: didattica
+    filter:
+      field: showCMS
+      value: true
+    fields:
+      - label: Nome attività
+        name: title
+        widget: string
+        required: true
+      - label: Area
+        name: area
+        hint: sismico/idraulico/...
+        widget: string
+        required: true
+      - label: Numero dello step
+        name: step
+        widget: number
+        min: 1
+        valueType: int
+        required: true
+      - label: Durata dell'attività (minuti)
+        name: min
+        widget: number
+        min: 1
+        valueType: int
+        required: true
+      - label: Icona
+        name: icon
+        hint: classe css dell'icona
+        widget: string
+        required: true
+      - label: Descrizione
+        name: body
+        widget: markdown
         required: true
       - label: LASCIAMI ATTIVO
         name: showCMS

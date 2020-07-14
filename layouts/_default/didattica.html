@@ -9,7 +9,7 @@
       <div class="progress-line"></div>
     </div>
     <div class="step-info">
-      <h2>{{.Title}}</h2>
+      <h2>{{.Params.type}}</h2>
       {{.Content}}
     </div>
   </div>
@@ -32,7 +32,7 @@
       {{end}}
     </div>
     <div class="step-info">
-      <h2>{{.Params.min}} min - {{$area}} - {{.Title}}</h2>
+      <h2>{{.Params.min}} min - {{$area}} - {{.Params.type}}</h2>
       {{.Content}}
       <div class="step-info-imgs">
         <!--  prettier-ignore -->
