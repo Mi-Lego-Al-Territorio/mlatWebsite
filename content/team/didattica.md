@@ -7,6 +7,8 @@ members:
   - name: Fabio Carlacchiani
     link: https://www.linkedin.com/in/fabio-carlacchiani-23b1a7184
   - name: Julia Zanutto
+  - name: Alessandro La Rocca
+    link: https://www.linkedin.com/in/alessandro-la-rocca/
 showCMS: true
 ---
 

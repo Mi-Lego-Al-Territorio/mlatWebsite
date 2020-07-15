@@ -2,6 +2,7 @@
 title: multimedia
 icon: flaticon-video-camera
 members:
+  - name: Erica Forti
 showCMS: true
 ---
 
