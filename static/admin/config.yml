@@ -80,10 +80,9 @@ collections:
         name: body
         widget: markdown
         required: true
-      - label: LASCIAMI ATTIVO
+      - label: Mostra nel CMS
         name: showCMS
-        widget: boolean
-        required: true
+        widget: hidden
         default: true
   - name: partners
     label: Partners
@@ -114,10 +113,9 @@ collections:
         widget: image
         allow_multiple: false
         required: true
-      - label: LASCIAMI ATTIVO
+      - label: Mostra nel CMS
         name: showCMS
-        widget: boolean
-        required: true
+        widget: hidden
         default: true
   - name: team
     label: Team
@@ -155,10 +153,9 @@ collections:
                 Non è un link,
               ]
         required: true
-      - label: LASCIAMI ATTIVO
+      - label: Mostra nel CMS
         name: showCMS
-        widget: boolean
-        required: true
+        widget: hidden
         default: true
   - name: education
     label: Didattica
@@ -201,8 +198,7 @@ collections:
         name: body
         widget: markdown
         required: true
-      - label: LASCIAMI ATTIVO
+      - label: Mostra nel CMS
         name: showCMS
-        widget: boolean
-        required: true
+        widget: hidden
         default: true
