@@ -225,6 +225,7 @@ Until the website doesn't need some back-end feature, for example the quiz game,
 - supports an efficient way to store images using its Large Media feature
 - provides with a free SSL certificate from "Let's Encrypt"
 - let us use a costum url
+- has great implementation with [netlify cms](https://www.netlifycms.org/)
 
 Once the website will need a back-end feature will evaluate different options, for now the main candidates are Firebase, an abstraction of Google Cloud, and Microsoft Azure.
 
