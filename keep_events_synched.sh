@@ -13,6 +13,7 @@ EVENT_FILES=content/eventi/*.md
 OUTPUT=$(grep -oP 'date: \d{4}\-\d{2}\-\d{2}' $EVENT_FILES)
 
 i=0;
+FOUND=0
 for o in $OUTPUT
 do
     isEven=$((i%2))
@@ -23,8 +24,8 @@ do
         if [ "$eventDate" -eq "$YESTERDAY" ]
         then
             echo yesterday event found, deploying...
-            # curl -X POST -d {} $DEPLOY_WEB_HOOK
-            echo finished deploying
+            curl -X POST -d {} $DEPLOY_WEB_HOOK
+            break
         fi
     fi
     i=$((i+1))
