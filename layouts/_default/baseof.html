@@ -13,6 +13,7 @@
 
     <!--  prettier-ignore -->
     {{ $style := resources.Get "sass/base.scss"| toCSS  | minify | fingerprint}}
+
     <link
       href="{{$style.RelPermalink}}"
       rel="stylesheet"
@@ -27,6 +28,7 @@
     <title>{{ with $.Page.Title}}{{.}} - {{end}}{{ $.Site.Title}}</title>
     <link rel="shortcut icon" type="image/svg+xml" href="/logo.svg" />
     {{ $indexJS := resources.Get "js/index.js" | minify | fingerprint}}
+
     <script
       defer
       src="{{$indexJS.RelPermalink}}"
@@ -50,8 +52,9 @@
 
     <nav>
       {{$mainMenu := $.Site.Menus.main }} {{range $mainMenu }}
-      <!--  prettier-ignore -->
+
       {{ if $.Page.IsMenuCurrent "main" . }}
+
       <a href="{{.URL}}" class="menu-active">
         <div class="menu-icon-container">
           <i class="{{.Pre}}"></i>
@@ -59,6 +62,7 @@
         <h2>{{.Name}}</h2>
       </a>
       {{else}}
+
       <a href="{{.URL}}">
         <div class="menu-icon-container">
           <i class="{{.Pre}}"></i>
@@ -66,13 +70,16 @@
         <h2>{{.Name}}</h2>
       </a>
       {{end}} {{end}}
+
     </nav>
 
     <div class="centermain">
       <main>
         {{ block "title" . }}
+
         <h1 class="page-title">{{.Page.Title}}</h1>
         {{ end }} {{ block "content" . }} {{ end }}
+
       </main>
     </div>
 
@@ -80,12 +87,14 @@
       <h1>
         {{ with .Param "mails"}} Curiosità? Scrivi a
         <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+
       </h1>
       <i class="far fa-envelope" id="mail"></i>
       <div id="socials">
         {{with .Param "socials" }}{{range .}}<a href="{{.link}}" target="_blank"
           ><i class="{{.icon}}"></i></a
         >{{end}}{{end}}
+
       </div>
     </footer>
     <script>

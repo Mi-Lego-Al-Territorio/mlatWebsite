@@ -1,7 +1,9 @@
 {{ define "content"}}
+
 <div class="team">
   <div class="team-icons">
     {{range .Resources}} {{if ne .Params.members nil}}
+
     <div class="groupIcon">
       <a href="#{{.File.BaseFileName}}">
         <i class="{{.Params.icon}}"></i>
@@ -9,9 +11,11 @@
       </a>
     </div>
     {{end}} {{end}}
+
   </div>
   <div class="team-descriptions">
     {{range .Resources}} {{if ne .Params.members nil}}
+
     <div class="groupCard" id="{{.Title}}">
       <div class="icon-container">
         <i class="{{.Params.icon}}"></i>
@@ -19,24 +23,29 @@
       <div class="group-info">
         <h2>{{.Title}}</h2>
         {{.Content}}
-        <br />
+ <br />
         <b>
           Membri:
         </b>
         {{$membersSorted := sort .Params.Members "name" }}
+
         <ul class="group-members">
           {{range $membersSorted}}
+
           <li>
             {{.name}} {{with .link}}
+
             <a href="{{.}}" target="_blank">
               &nbsp;&nbsp;<i class="fab fa-linkedin"></i
             ></a>
             {{end}}{{end}}
+
           </li>
         </ul>
       </div>
     </div>
     {{end}}{{end}}
+
   </div>
 </div>
 {{end}}

@@ -5,24 +5,29 @@
     <img class="logo" src="logo.svg" />
     <p id="motto">
       {{ with .Param "motto"}}{{.}}{{end}}
+
     </p>
     <h2>CHI SIAMO</h2>
     {{ .Content }}
+
     <div class="home-imgs">
       <!--  prettier-ignore -->
       {{ range $i, $sequence :=  (seq 3) }}
       {{ partial "image.html" (dict "path" ($sequence | printf "images/home%d.*") "alt" ($sequence | printf "home pic %d.*")) }}
       {{ end }}
+
     </div>
   </div>
   <div class="lastEvents">
     <h2 class="lastEvents-title">Alcuni nostri eventi</h2>
     {{$eventPage := .GetPage "eventi"}}
+
     <a href="/eventi">
       <!--  prettier-ignore -->
       {{range first 2 (sort  $eventPage.Resources ".Params.date.Unix" "desc")}}
       {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "mini" true) }}
       {{end}}
+
     </a>
   </div>
 </div>

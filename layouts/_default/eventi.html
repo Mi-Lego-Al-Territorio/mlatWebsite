@@ -10,21 +10,27 @@
 ></script>
 <!--  prettier-ignore -->
 {{$nowUnix := now.Unix}}
+
 <div class="events">
   <!--  prettier-ignore -->
   {{$futureEvents := sort (where .Resources "Params.date.Unix" "ge" $nowUnix) ".Params.date.Unix" "desc"}}
   {{if ne (len $futureEvents) 0}}
+
   <h1 class="page-title">Eventi futuri</h1>
   {{end}} {{range $futureEvents }}
+
   <!--  prettier-ignore -->
   {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date) }}
   {{end}}
   {{$pastEvents := sort (where .Resources "Params.date.Unix" "lt" $nowUnix) ".Params.time" "desc" }}
   {{if ne (len $pastEvents) 0}}
+
   <h1 class="page-title">Eventi passati</h1>
   {{end}} {{range $pastEvents}}
+
   <!--  prettier-ignore -->
   {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "imgPath" .Params.imgPath) }}
   {{end}}
+
 </div>
 {{end}}

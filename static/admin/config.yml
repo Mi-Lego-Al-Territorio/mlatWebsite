@@ -117,6 +117,33 @@ collections:
         name: showCMS
         widget: hidden
         default: true
+  - name: projects
+    label: Progetti
+    folder: content/progetti
+    create: false
+    slug: '{{slug}}'
+    description: I progetti del team
+    preview_path: progetti
+    filter:
+      field: showCMS
+      value: true
+    fields:
+      - label: Nome
+        name: title
+        widget: string
+        required: true
+      - label: Foto
+        name: imgPath
+        widget: image
+        allow_multiple: false
+        required: true
+      - label: Descrizione
+        name: body
+        widget: markdown
+      - label: Mostra nel CMS
+        name: showCMS
+        widget: hidden
+        default: true
   - name: team
     label: Team
     folder: content/team

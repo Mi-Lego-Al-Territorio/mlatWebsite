@@ -17,6 +17,7 @@
     <div class="step-info">
       <h2>{{.Title}}</h2>
       {{.Content}}
+
     </div>
   </div>
   <!--  prettier-ignore -->
@@ -25,31 +26,39 @@
   {{range $index, $area := (.Param "activityAreas")}}
   {{range where $steps "Params.area" $area}}
   {{$step := .Params.step}}
+
   <div class="education-step">
     <a id="{{$area}}-{{$step}}" class="step-anchor"></a>
     <div class="progress-indicator">
       {{if eq $step 1}}
-      <i class="{{index $areaIcons $index}}"></i>
+ <i class="{{index $areaIcons $index}}"></i>
       <div class="progress-line start"></div>
       {{else if eq $step (len (where $steps ".Params.area" $area))}}
+
       <div class="progress-line end"></div>
       {{else}}
+
       <div class="progress-line"></div>
       {{end}}
+
     </div>
     <div class="step-info">
       <h2>{{.Params.min}} min - {{$area}} - {{.Params.type}}</h2>
       {{.Content}}
+
       <div class="step-info-imgs">
         <!--  prettier-ignore -->
         {{$assetImgPath := (printf "images/didattica/%s/%d" $area $step )}}
         {{ $pics := readDir (printf "assets/%s" $assetImgPath) }}
+
         <!--  prettier-ignore -->
         {{range $pics}}{{partial "image.html" (dict "path" (printf "%s/%s" $assetImgPath .Name ))}}{{end}}
+
       </div>
     </div>
   </div>
   {{end}} {{end}}
+
   <div class="education-step">
     <a id="end-msg" class="step-anchor"></a>
     <div class="progress-indicator no-visibility">
@@ -60,6 +69,7 @@
       <p>
         {{ with $.Site.Param "mails"}} Curiosità? Scrivi a
         <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+
       </p>
     </div>
   </div>
@@ -71,11 +81,13 @@
     <div class="education-navigator-icons">
       <a href="#start-msg"> <i class="flaticon-info"></i> </a>
       {{range $index, $area := (.Param "activityAreas")}}
+
       <!--  prettier-ignore -->
       {{range where $steps "Params.area" $area}} {{$step := .Params.step}}
+
       <a href="#{{$area}}-{{$step}}"> <i class="{{.Params.icon}}"></i> </a
       >{{end}}{{end}}
-      <a href="#end-msg"> <i class="flaticon-email"></i> </a>
+ <a href="#end-msg"> <i class="flaticon-email"></i> </a>
     </div>
     <!-- only way I managed to center the icon is with padding -->
     <div id="arrow-down" class="arrow" style="padding-top: 13px;">

@@ -1,13 +1,18 @@
 {{ define "content"}}
+
 <div class="projects">
   {{range .Resources}}
+
   <div class="modelSection">
     <i class="{{.Params.icon}}"></i>
     <h1>{{.Title}}</h1>
     {{.Content}}
+
     <!-- prettier-ignore -->
     {{ partial "image.html" (dict "path" ((replace .Params.imgPath "/assets/images/" "") | printf "images/%s") "alt" .Title) }}
+
   </div>
   {{end}}
+
 </div>
 {{end}}
