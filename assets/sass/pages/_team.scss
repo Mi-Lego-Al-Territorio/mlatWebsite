@@ -78,6 +78,14 @@
       @include media('<tablet') {
         grid-template-columns: 1fr;
       }
+      .member-row {
+        @include media('<tablet') {
+          padding-left: 20px;
+        }
+        display: flex;
+        // justify-content: space-between;
+        // padding: 0 1px;
+      }
     }
   }
 }
