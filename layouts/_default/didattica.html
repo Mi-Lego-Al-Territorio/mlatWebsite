@@ -44,16 +44,18 @@
     </div>
     <div class="step-info">
       <h2>{{.Params.min}} min - {{$area}} - {{.Params.type}}</h2>
-      {{.Content}}
+      <div class="step-info-content">
+        {{.Content}}
 
-      <div class="step-info-imgs">
-        <!--  prettier-ignore -->
-        {{$assetImgPath := (printf "images/didattica/%s/%d" $area $step )}}
+        <div class="step-info-img">
+          <!--  prettier-ignore -->
+          {{$assetImgPath := (printf "images/didattica/%s/%d" $area $step )}}
         {{ $pics := readDir (printf "assets/%s" $assetImgPath) }}
 
-        <!--  prettier-ignore -->
-        {{range $pics}}{{partial "image.html" (dict "path" (printf "%s/%s" $assetImgPath .Name ))}}{{end}}
+          <!--  prettier-ignore -->
+          {{range $pics}}{{partial "image.html" (dict "path" (printf "%s/%s" $assetImgPath .Name ))}}{{end}}
 
+        </div>
       </div>
     </div>
   </div>
