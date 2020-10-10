@@ -72,13 +72,16 @@
       picture {
         display: none;
       }
+      i {
+        text-align: right;
+        padding: 20px;
+      }
     }
-    @include media('>phone') {
+    @include media('>tablet') {
       i {
         display: none;
       }
     }
-
     &-info {
       flex: 3;
       display: flex;
