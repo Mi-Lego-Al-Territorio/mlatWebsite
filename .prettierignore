@@ -2,3 +2,5 @@ static/flaticon
 public/
 resources/
 .history/
+manifest.json
+assets/sass/config.scss

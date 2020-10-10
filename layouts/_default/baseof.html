@@ -6,13 +6,17 @@
       name="viewport"
       content="width=device-width, height=device-height, initial-scale=1.0"
     />
+    {{$manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . | minify | fingerprint}}
+
+    {{$sw := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" $ }}
+
+    <link rel="manifest" href="{{$manifest.RelPermalink}}" />
     <link
       href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
       rel="stylesheet"
     />
 
-    <!--  prettier-ignore -->
-    {{ $style := resources.Get "sass/base.scss"| toCSS  | minify | fingerprint}}
+    {{ $style := resources.Get "sass/config.scss" | resources.ExecuteAsTemplate "sass/config.scss" . | toCSS | minify | fingerprint}}
 
     <link
       href="{{$style.RelPermalink}}"
@@ -33,7 +37,7 @@
       defer
       src="{{$indexJS.RelPermalink}}"
       integrity="{{ $indexJS.Data.Integrity }}"
-    ></script>
+      ></script>
   </head>
   <body class="no-display">
     <input type="checkbox" id="menu-toggle" />
@@ -111,6 +115,16 @@
         localStorage.setItem('mlatMenu', isMenuOpen ? 'open' : 'closed');
       });
       document.querySelector('body').classList.remove('no-display');
+
+      if ('serviceWorker' in navigator)
+        navigator.serviceWorker
+          .register('{{ $sw.RelPermalink}}')
+          .then(()=> {
+            console.log('service worker registered');
+          })
+          .catch(err => {
+            console.error('ERROR WHEN REGISTERING SERVICE WORKER', err);
+          });
     </script>
   </body>
 </html>

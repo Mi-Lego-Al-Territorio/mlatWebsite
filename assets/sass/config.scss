@@ -1,8 +1,8 @@
 :root {
-  --color-title: #e84040;
   // light theme
-  --color-bkg: #ffffff;
-  --color-fill: #f8b10b;
+  --color-title: #e84040;
+  --color-bkg: {{.Param "backgroundColor"}};
+  --color-fill: {{.Param "themeColor"}};
   --color-fill-light: #fbd16e;
   --color-text: #292929;
   --color-link: #3953a1;
@@ -53,3 +53,17 @@ $event-card-shadow: var(--event-card-shadow);
 
 // map css variables that are needed for js to sass variables
 $header-height: 80px;
+
+@import 'includeMedia';
+@import 'base';
+@import 'general/mixins';
+@import 'general/header';
+@import 'general/menu';
+@import 'general/main';
+@import 'general/footer';
+@import 'pages/home';
+@import 'pages/events';
+@import 'pages/team';
+@import 'pages/projects';
+@import 'pages/education';
+@import 'pages/partners';
