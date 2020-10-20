@@ -1,0 +1,15 @@
+name: Notify new deployed url
+on: push
+jobs:
+  keep_events_synched:
+    name: Notify new deployed url
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout latest code
+        uses: actions/checkout@v2
+      - name: post to webhook
+        working-directory: .github/workflows
+        env:
+          SLACK_WEB_HOOK: ${{ secrets.SLACK_WEB_HOOK }}
+          BASE_DOMAIN: ${{ secrets.BASE_DOMAIN }}
+        run: sh send.sh ${GITHUB_REF#refs/*/}

@@ -14,7 +14,7 @@ The following is the documentation for the development of the website of Politec
   - [Configuration parameters needed](#configuration-parameters-needed)
   - [Sass structure](#sass-structure)
   - [Deployement](#deployement)
-  - [Automation](#automation)
+  - [CI/CD pipelines](#cicd-pipelines)
   - [Implementation path](#implementation-path)
   - [General notes](#general-notes)
 
@@ -229,11 +229,14 @@ Until the website doesn't need some back-end feature, for example the quiz game,
 
 Once the website will need a back-end feature will evaluate different options, for now the main candidates are Firebase, an abstraction of Google Cloud, and Microsoft Azure.
 
-## Automation
+## CI/CD pipelines
 
-### Github actions
+At the moment our deployment implements these mecanism of CI/CD pipelining:
 
-### Other services
+- locally before commiting a pre-commit hook checks the formatting of the code and prevents non formatted code to commit
+- on every push Netlify deploys a new preview of the site and a github action sends a message to a slack channel with the url of the deploy
+- at every deploy start/end thanks to a webhook of netlify and a little nodeJS app on heroku a message is sent on slack
+- every night a github action checks if some events became past, if so it redelpoys the entire site on netlify
 
 ## Implementation path
 

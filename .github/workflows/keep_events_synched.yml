@@ -10,6 +10,7 @@ jobs:
       - name: checkout latest code
         uses: actions/checkout@v2
       - name: check events and redeploy site if needed
+        working-directory: .github/workflows
         env:
           DEPLOY_WEB_HOOK: ${{ secrets.DEPLOY_WEB_HOOK }}
         run: sh keep_events_synched.sh
