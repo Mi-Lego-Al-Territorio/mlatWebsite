@@ -27,17 +27,16 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', e => {
-  console.log('activating service worker');
-  // e.waitUntil(
-  // caches.keys().then(keys => {
-  //   console.log(keys.filter(key => key !== staticCacheName));
-  //   return Promise.all(
-  //     keys
-  //       .filter(key => key !== staticCacheName)
-  //       .map(key => caches.delete(key))
-  //   );
-  // })
-  // );
+  e.waitUntil(
+    caches.keys().then(keys => {
+      console.log(keys.filter(key => key !== staticCacheName));
+      return Promise.all(
+        keys
+          .filter(key => key !== staticCacheName)
+          .map(key => caches.delete(key))
+      );
+    })
+  );
 });
 
 self.addEventListener('fetch', e => {
@@ -58,15 +57,6 @@ self.addEventListener('fetch', e => {
             })
           )
       )
-      .catch(() => {
-        console.warn('HERE');
-        caches.match('/').then(res => {
-          console.log('/', res);
-        });
-        caches.match('/offline').then(res => {
-          console.log('/offline', res);
-        });
-        return caches.match('/');
-      })
+      .catch(() => caches.match('/'))
   );
 });
