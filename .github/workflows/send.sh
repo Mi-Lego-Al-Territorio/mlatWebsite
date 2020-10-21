@@ -14,4 +14,4 @@ else
 
 DEPLOY_URL=https://$COMPLETE_DOMAIN
 
-curl -X POST --data-urlencode "payload={\"channel\": \"#site-ci\", \"username\": \"webhookbot\", \"text\": \"Next deploy at $DEPLOY_URL\", \"icon_emoji\": \":nerd_face:\"}" $SLACK_WEB_HOOK
+curl -X POST --data-urlencode "payload={\"channel\": \"#site-ci\", \"username\": \"webhookbot\", \"text\": \"View at $DEPLOY_URL\", \"icon_emoji\": \":eyes:\"}" $SLACK_WEB_HOOK
