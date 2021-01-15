@@ -86,10 +86,17 @@
     <footer>
       <h1>
         {{ with .Param "mails"}} Curiosità? Scrivi a
-        <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>{{end}}
+        <a href="mailto:{{.info}}" target="_blank">{{.info}}</a>
+        {{end}}
 
       </h1>
-      <i class="far fa-envelope" id="mail"></i>
+      {{ with .Param "mails"}}
+
+      <a href="mailto:{{.info}}" target="_blank">
+        <i href="mailto:{{.info}}" class="far fa-envelope" id="mail"></i>
+      </a>
+      {{end}}
+
       <div id="socials">
         {{with .Param "socials" }}{{range .}}<a href="{{.link}}" target="_blank"
           ><i class="{{.icon}}"></i></a
