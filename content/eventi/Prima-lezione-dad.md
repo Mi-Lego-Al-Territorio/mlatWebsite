@@ -6,4 +6,7 @@ imgPath: /assets/images/Prima-lezione-dad.jpg
 showCMS: true
 ---
 
-Il 26 novembre il team Mi Lego Al Territorio ha partecipato alla Notte dei Ricercatori, un evento organizzato dalla città di Torino con il contributo Sharper - SHAring Researchers' Passion for Evolving Responsabilities. Grazie al programma "Good Morning Torino", rivolta specialmente alle classi, ci siamo divertiti un sacco ad intrattenere scuole medie e superiori trasmettendo la nostra attività di sensibilizzazione e prevenzione in diretta streaming dal Politecnico di Torino. Infatti, tramite video, quiz e lezioni interattive pensate apposta per l'occasione, siamo riusciti a catturare l'attenzione dei ragazzi e a portare a casa un risultato sorprendente.
+Per fronteggiare la pandemia il team non ha perso tempo!
+Abbiamo convertito l'intera attività in un format adatto all'esecuzione da remoto, composta da quiz, sondaggi e presentazioni interattive, e siamo stati così efficienti da riuscire già per fine Maggio a programmare videoconferenze online con ben 3 classi.
+
+Riuscire a trasmettere ai ragazzi i concetti alla base della nostra attività nonostante le circostanze, ci ha riempito di soddisfazione e ci ha spronato a proseguire il nostro progetto con ancor più motivazione.
