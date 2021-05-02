@@ -1,0 +1,101 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?efa6b19538fd3993bc9d3666a98643a4") format("truetype"),
+url("./flaticon.woff?efa6b19538fd3993bc9d3666a98643a4") format("woff"),
+url("./flaticon.woff2?efa6b19538fd3993bc9d3666a98643a4") format("woff2"),
+url("./flaticon.eot?efa6b19538fd3993bc9d3666a98643a4#iefix") format("embedded-opentype"),
+url("./flaticon.svg?efa6b19538fd3993bc9d3666a98643a4#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "flood": "\f101",
+    "earthquake": "\f102",
+    "team": "\f103",
+    "partner": "\f104",
+    "education": "\f105",
+    "calendar": "\f106",
+    "shapes-and-symbols": "\f107",
+    "business": "\f108",
+    "null": "\f109",
+    "null-1": "\f10a",
+    "more": "\f10b",
+    "info": "\f10c",
+    "jigsaw": "\f10d",
+    "email": "\f10e",
+    "video-camera": "\f10f",
+    "share": "\f110",
+    "coding": "\f111",
+    "unlink": "\f112",
+    "cancel": "\f113",
+);
+
+.flaticon-flood:before {
+    content: map-get($flaticon-map, "flood");
+}
+.flaticon-earthquake:before {
+    content: map-get($flaticon-map, "earthquake");
+}
+.flaticon-team:before {
+    content: map-get($flaticon-map, "team");
+}
+.flaticon-partner:before {
+    content: map-get($flaticon-map, "partner");
+}
+.flaticon-education:before {
+    content: map-get($flaticon-map, "education");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-shapes-and-symbols:before {
+    content: map-get($flaticon-map, "shapes-and-symbols");
+}
+.flaticon-business:before {
+    content: map-get($flaticon-map, "business");
+}
+.flaticon-null:before {
+    content: map-get($flaticon-map, "null");
+}
+.flaticon-null-1:before {
+    content: map-get($flaticon-map, "null-1");
+}
+.flaticon-more:before {
+    content: map-get($flaticon-map, "more");
+}
+.flaticon-info:before {
+    content: map-get($flaticon-map, "info");
+}
+.flaticon-jigsaw:before {
+    content: map-get($flaticon-map, "jigsaw");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-video-camera:before {
+    content: map-get($flaticon-map, "video-camera");
+}
+.flaticon-share:before {
+    content: map-get($flaticon-map, "share");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon-map, "coding");
+}
+.flaticon-unlink:before {
+    content: map-get($flaticon-map, "unlink");
+}
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
