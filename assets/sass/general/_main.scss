@@ -1,7 +1,10 @@
-.centermain {
+.center-main {
   @include main-common();
   min-height: calc(100% - #{$header-height} - #{$footer-height});
   padding: 0 30px;
+  @include media('<tablet') {
+    padding: 0 10px;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;

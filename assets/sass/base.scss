@@ -74,6 +74,10 @@ a {
   justify-content: center;
 }
 
+.above {
+  z-index: 200;
+}
+
 html {
   // to compensate for anchor tags
   scroll-padding-top: $header-height + 40px;
