@@ -30,11 +30,7 @@
       >
         {{range $audiences}}
 
-        <button
-          id="{{.Title}}"
-          class="pill education-audience-selector"
-          onclick="() => {console.log('{{ .Title }}')}"
-        >
+        <button id="{{.Title}}" class="pill education-audience-selector ">
           <h3>{{.Title}}
 </h3>
         </button>
@@ -107,7 +103,7 @@
       </p>
     </div>
   </div>
-  <div id="education-current-selected" class="pill above">
+  <div id="education-current-selected" class="pill z200">
     <h3></h3>
     <i class="flaticon-cancel"></i>
   </div>
