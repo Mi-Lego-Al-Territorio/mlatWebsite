@@ -92,10 +92,14 @@
       </h1>
       {{ with .Param "mails"}}
 
-      <a href="mailto:{{.info}}" target="_blank">
+      <a href="mailto:{{.info}}" class="no-desktop" target="_blank">
         <i href="mailto:{{.info}}" class="far fa-envelope" id="mail"></i>
       </a>
       {{end}}
+
+      <a id="logo-poli" href="https://www.polito.it" target="_blank">
+        <img src="/logoPoli.svg" />
+      </a>
 
       <div id="socials">
         {{with .Param "socials" }}{{range .}}<a href="{{.link}}" target="_blank"

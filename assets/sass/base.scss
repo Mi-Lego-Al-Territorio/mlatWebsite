@@ -66,6 +66,12 @@ a {
   display: none;
 }
 
+.no-desktop {
+  @include media('>phone') {
+    display: none;
+  }
+}
+
 .no-visibility {
   visibility: hidden;
 }

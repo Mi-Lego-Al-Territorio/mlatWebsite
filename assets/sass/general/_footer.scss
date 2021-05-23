@@ -29,4 +29,20 @@ footer {
     font-size: 2.2rem;
     margin: 0.5rem;
   }
+  #logo-poli {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin: auto;
+      height: $footer-height - 20;
+      order: 1;
+    }
+    @include media('<tablet') {
+      order: 3;
+    }
+  }
+  #socials {
+    order: 2;
+  }
 }
