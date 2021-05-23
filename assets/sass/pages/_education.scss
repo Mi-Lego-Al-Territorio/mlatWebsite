@@ -36,7 +36,7 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
       margin-right: 0;
     }
     display: flex;
-    height: calc(100vh - #{$header-height});
+    height: calc(100vh - #{$header-height} - #{$footer-height});
 
     .step-anchor {
       display: block;
@@ -123,6 +123,9 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
       }
     }
   }
+  &-audience-selector {
+    border: 1px solid $color-title !important;
+  }
   #education-current-selected {
     $edu-curr-sel-height: 60px;
     position: fixed;
@@ -133,6 +136,8 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     width: 240px;
     padding: 15px;
+    font-size: 1rem;
+    box-shadow: $edu-nav-shadow;
     h3 {
       transition: opacity 0.1s ease-out;
       opacity: 0;
@@ -141,8 +146,9 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
     }
     @include media('<tablet') {
       padding: 10px;
-      width: 200px;
+      width: 55vw;
       top: calc(#{$header-height} + 5px);
+      right: 10px;
     }
     i {
       margin-right: 10px;
@@ -227,7 +233,6 @@ $edu-nav-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   right: $edu-nav-right;
   border-radius: $edu-curr-sel-height;
-  box-shadow: $edu-nav-shadow;
   display: flex;
   justify-content: center;
   align-items: center;
