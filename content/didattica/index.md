@@ -1,5 +1,5 @@
 ---
-title: La nostra didattica
+title: Le nostre attività
 draft: false
 layout: didattica
 menu:

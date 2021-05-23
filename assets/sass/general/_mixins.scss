@@ -68,16 +68,25 @@
       flex-direction: column;
       padding: 20px;
       margin: 20px 0;
-      p,
+      .full-text {
+        display: none;
+      }
+      p {
+        line-height: 25px;
+      }
       picture {
         display: none;
       }
       i {
         text-align: right;
         padding: 20px;
+        cursor: pointer;
       }
     }
     @include media('>tablet') {
+      .truncated-text {
+        display: none;
+      }
       i {
         display: none;
       }
