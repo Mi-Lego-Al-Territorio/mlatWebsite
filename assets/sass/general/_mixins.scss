@@ -62,6 +62,8 @@
 
     @if mini == true {
       max-width: 300px;
+      i {
+      }
     }
     @include media('<tablet') {
       max-width: initial;

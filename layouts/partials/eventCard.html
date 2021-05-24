@@ -11,12 +11,23 @@
         <h1 class="eventCard-name">{{.title}}</h1>
       </div>
 
-      {{if ne (len .content) 0}}
+      {{if .mini}}
+
+      <label>
+        <i
+          class="flaticon-right-arrow more-btn"
+          style="transform: rotateZ(321deg);"
+        ></i>
+      </label>
+
+      {{else}}
+ {{if ne (len .content) 0}}
 
       <label>
         <i class="flaticon-null more-btn"></i>
       </label>
       {{end}}
+ {{end}}
 
     </div>
     <div class="truncated-text">{{truncate 80 .content }}</div>

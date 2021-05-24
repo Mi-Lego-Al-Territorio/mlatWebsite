@@ -8,7 +8,6 @@ function shrinkHeader() {
   document.querySelector('label').style.top = '10px';
 }
 
-console.log();
 const isOnEducation = window.location.pathname.includes('didattica');
 if (isMobile && !isOnEducation) {
   window.addEventListener('scroll', () => {

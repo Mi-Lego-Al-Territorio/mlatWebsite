@@ -6,13 +6,11 @@ const truncatedEventsDescriptions = document.querySelectorAll(
 const fullEventsDescriptions = document.querySelectorAll(
   '.eventCard .full-text p'
 );
-console.log(fullEventsDescriptions);
 const eventsImgs = document.querySelectorAll('.eventCard picture');
 
 const truncatedTexts = {};
 actionBtns.forEach((btn, idx) => {
   btn.addEventListener('click', e => {
-    console.log(truncatedEventsDescriptions[idx].innerText.slice(-1));
     const text = truncatedEventsDescriptions[idx].innerText;
     const showingUncompleteText = text.slice(-1) === '…';
     if (showingUncompleteText) {

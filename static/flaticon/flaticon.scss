@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?efa6b19538fd3993bc9d3666a98643a4") format("truetype"),
-url("./flaticon.woff?efa6b19538fd3993bc9d3666a98643a4") format("woff"),
-url("./flaticon.woff2?efa6b19538fd3993bc9d3666a98643a4") format("woff2"),
-url("./flaticon.eot?efa6b19538fd3993bc9d3666a98643a4#iefix") format("embedded-opentype"),
-url("./flaticon.svg?efa6b19538fd3993bc9d3666a98643a4#flaticon") format("svg");
+    src: url("./flaticon.ttf?632179692c517f8ba46e445a9f173894") format("truetype"),
+url("./flaticon.woff?632179692c517f8ba46e445a9f173894") format("woff"),
+url("./flaticon.woff2?632179692c517f8ba46e445a9f173894") format("woff2"),
+url("./flaticon.eot?632179692c517f8ba46e445a9f173894#iefix") format("embedded-opentype"),
+url("./flaticon.svg?632179692c517f8ba46e445a9f173894#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -37,9 +37,10 @@ $flaticon-map: (
     "email": "\f10e",
     "video-camera": "\f10f",
     "share": "\f110",
-    "coding": "\f111",
-    "unlink": "\f112",
-    "cancel": "\f113",
+    "unlink": "\f111",
+    "cancel": "\f112",
+    "right-arrow": "\f113",
+    "computer": "\f114",
 );
 
 .flaticon-flood:before {
@@ -90,12 +91,15 @@ $flaticon-map: (
 .flaticon-share:before {
     content: map-get($flaticon-map, "share");
 }
-.flaticon-coding:before {
-    content: map-get($flaticon-map, "coding");
-}
 .flaticon-unlink:before {
     content: map-get($flaticon-map, "unlink");
 }
 .flaticon-cancel:before {
     content: map-get($flaticon-map, "cancel");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
 }

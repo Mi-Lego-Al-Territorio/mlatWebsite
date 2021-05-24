@@ -1,6 +1,6 @@
 ---
 title: informatica
-icon: flaticon-coding
+icon: flaticon-computer
 members:
   - name: Gabriele Filaferro
     link: https://www.linkedin.com/in/gabriele-filaferro/
