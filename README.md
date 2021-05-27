@@ -1,5 +1,7 @@
 # Mi lego al territorio website
 
+[Deployed website](https://www.milegoalterritorio.it)
+
 The following is the documentation for the development of the website of Politecnico Student Team 'Mi Lego Al Territorio'.
 
 ## Index
@@ -20,7 +22,7 @@ The following is the documentation for the development of the website of Politec
 
 ## General decisions
 
-- The website is developed with the [HUGO](https://gohugo.io/) tool
+- The website is developed using [HUGO](https://gohugo.io/)
 - The format to represent data is YAML
 - SASS is used instead of CSS
 - The design is desktop-first, since the more complicated front-end logic is on a wide screen layout
@@ -248,27 +250,22 @@ At the moment our deployment implements these mecanism of CI/CD pipelining:
 - [x] adding imgs
 - [x] add netlify CMS
 - [x] pipes to add automatic content
-- [ ] optimizing imgs inside HUGO
-- [ ] deploy to real url
-- [ ] optimizing imgs outside HUGO (if necessary)
+- [x] optimizing imgs inside HUGO
+- [x] deploy to real url
 - [ ] optimizing SEO
 - [ ] docs to explain how to add content
+- [ ] optimizing imgs outside HUGO (if necessary)
 - [ ] other functionalities
   - quiz
   - ...
 
 ## General notes
 
-### Gabri
-
 - start with base website and then optimize
   - Images (Netlify Large Media)
   - Automation (Github Actions)
   - accessible content management by non-dev users (Integromat)
   - SEO
-
-### Nico
-
 - use picture tag instead of img tag
 - CSS blur on 20x20 and the load asynchronously
 - use webP and PNG
