@@ -11,7 +11,7 @@
         <h1 class="eventCard-name">{{.title}}</h1>
       </div>
 
-      {{if .mini}}
+      {{if .linkPreview}}
 
       <label>
         <i
@@ -30,8 +30,15 @@
  {{end}}
 
     </div>
-    <div class="truncated-text">{{truncate 80 .content }}</div>
+    {{if .linkPreview}}
+
+    <div>{{truncate 80 .content }}</div>
+    {{else}}
+
     <div class="full-text">{{.content}}</div>
+    {{end}}
+
+    <div class="truncated-text">{{truncate 80 .content }}</div>
   </div>
 
   <!-- prettier-ignore -->

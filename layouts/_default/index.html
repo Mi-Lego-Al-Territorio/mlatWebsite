@@ -3,10 +3,8 @@
 <div class="home">
   <div class="info">
     <img class="logo" src="logo.svg" />
-    <p id="motto">
-      {{ with .Param "motto"}}{{.}}{{end}}
-
-    </p>
+    <p id="motto">{{ with .Param "motto"}}{{.}}{{end}}
+</p>
     <h2>CHI SIAMO</h2>
     {{ .Content }}
 
@@ -25,7 +23,7 @@
     <a href="/eventi">
       <!--  prettier-ignore -->
       {{range first 2 (sort  $eventPage.Resources ".Params.date.Unix" "desc")}}
-      {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "mini" true) }}
+      {{ partial "eventCard" (dict "title" .Title "content" .Content "place" .Params.place "date" .Params.date "linkPreview" true) }}
       {{end}}
 
     </a>

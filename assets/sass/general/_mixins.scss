@@ -50,7 +50,7 @@
   }
 }
 
-@mixin eventCard($mini, $showImg) {
+@mixin eventCard($linkPreview, $showImg) {
   .eventCard {
     width: 100%;
     display: flex;
@@ -60,10 +60,8 @@
     border-radius: 15px;
     @include centerIcon(2rem, $color-fill);
 
-    @if mini == true {
-      max-width: 300px;
-      i {
-      }
+    i {
+      cursor: pointer;
     }
     @include media('<tablet') {
       max-width: initial;
@@ -82,15 +80,16 @@
       i {
         text-align: right;
         padding: 20px;
-        cursor: pointer;
       }
     }
     @include media('>tablet') {
       .truncated-text {
         display: none;
       }
-      i {
-        display: none;
+      @if $linkPreview == false {
+        i {
+          display: none;
+        }
       }
     }
     &-info {
@@ -101,7 +100,7 @@
 
     &-date {
       color: $color-fill;
-      @if mini = true {
+      @if $linkPreview = true {
         font-size: 1.3rem;
       }
     }
@@ -109,7 +108,7 @@
     &-name {
       margin: 15px 0;
       color: $color-title;
-      @if mini = true {
+      @if $linkPreview = true {
         font-size: 1.5rem;
       }
     }
