@@ -2,10 +2,14 @@
 title: sismica
 icon: flaticon-earthquake
 members:
-  - name: Federico Faedda
-    link: https://www.linkedin.com/in/federico-faedda-70917bb8/
-  - name: Antonio Sberna
-    link: https://www.linkedin.com/in/antonio-sberna/
+  - name: Martin Nicolàs Schneider Castro
+    link: https://www.linkedin.com/in/martin-nicol%C3%A1s-schneider-castro-731948216
+  - name: Luca Cariglione
+  - name: Luca Salvatelli
+  - name: Eduardo Barros
+  - name: Shishir Acharya
+  - name: Stefano Marchetto
+  - name: Riccardo Della Malva
 showCMS: true
 ---
 
