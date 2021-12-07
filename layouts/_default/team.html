@@ -17,7 +17,7 @@
     {{range .Resources}}
     {{if and 
       (ne .Params.members nil)
-      (not ( {{IsTrue .End}} )) }}
+      (not (.End)) }}
 
     <div class="groupCard" id="{{.Title}}">
       <div class="icon-container">
@@ -52,7 +52,7 @@
     {{range .Resources}}
     {{if and 
       (ne .Params.members nil)
-      ( {{IsTrue .End}} ) }}
+      (.End) }}
 
     <div class="groupCard" id="{{.Title}}">
       <div class="icon-container">

@@ -2,7 +2,7 @@
 title: sismica
 icon: flaticon-earthquake
 members:
-  - name: Martin Nicolàs Schneider Castro
+  - name: Martin Schneider
     link: https://www.linkedin.com/in/martin-nicol%C3%A1s-schneider-castro-731948216
   - name: Luca Cariglione
   - name: Luca Salvatelli
