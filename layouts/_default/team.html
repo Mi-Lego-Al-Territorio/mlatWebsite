@@ -14,10 +14,7 @@
 
   </div>
   <div class="team-descriptions">
-    {{range .Resources}}
-    {{if and 
-      (ne .Params.members nil)
-      (not (.End)) }}
+    {{range .Resources}} {{if ne .Params.members nil}}
 
     <div class="groupCard" id="{{.Title}}">
       <div class="icon-container">
@@ -47,43 +44,7 @@
         </ul>
       </div>
     </div>
-    {{end}}
-    {{end}}
-    {{range .Resources}}
-    {{if and 
-      (ne .Params.members nil)
-      (.End) }}
-
-    <div class="groupCard" id="{{.Title}}">
-      <div class="icon-container">
-        <i class="{{.Params.icon}}"></i>
-      </div>
-      <div class="group-info">
-        <h2>{{.Title}}</h2>
-        {{.Content}}
- <br />
-        <b>
-          Membri:
-        </b>
-        {{$membersSorted := sort .Params.Members "name" }}
-
-        <ul class="group-members">
-          {{range $membersSorted}}
-
-          <li class="member-row">
-            {{.name}} {{with .link}}
-
-            <a href="{{.}}" target="_blank">
-              &nbsp;&nbsp;<i class="fab fa-linkedin"></i
-            ></a>
-            {{end}}{{end}}
-
-          </li>
-        </ul>
-      </div>
-    </div>
-    {{end}}
-    {{end}}
+    {{end}}{{end}}
 
   </div>
 </div>
