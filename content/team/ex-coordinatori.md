@@ -1,5 +1,7 @@
 ---
 title: ex-coordinatori
+icon: flaticon-team
+end: true
 members:
   - name: Nico Caprioli
     link: https://www.linkedin.com/in/nico-caprioli/
