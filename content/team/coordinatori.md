@@ -1,5 +1,5 @@
 ---
-title: ex-coordinatori
+title: coordinatori
 icon: flaticon-team
 end: true
 members:
@@ -12,4 +12,4 @@ members:
 showCMS: true
 ---
 
-Coordinatori di edizioni passate
+Coordinatori attuali e vetusti 😏
