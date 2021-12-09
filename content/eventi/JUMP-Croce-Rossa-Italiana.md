@@ -1,9 +1,8 @@
 ---
-title: JUMP Croce Rossa Italiana
-place: Milano
+title: '"JUMP" - Croce Rossa Italiana'
+place: Palazzo delle Scintille (Milano)
 date: 2019-11-29
-imgPath: /assets/images/jump-2019.jpg
+imgPath: /assets/images/jump2019.png
 showCMS: true
 ---
-
-\#Jump19 presso il Palazzo delle Scintille. È stato bellissimo riuscire a collaborare con questa associazione, in un ambiente professionale e coinvolgente. Desideriamo quindi ringraziare la Croce Rossa Italiana per averci invitato e tutti coloro che hanno visitato il nostro stand, grandi e piccini!
+Il team è presente all'evento #Jump19 presso il Palazzo delle Scintille della Fiera di Milano, invitato dalla Croce Rossa Italiana e presenta i non soltanto i modelli in Lego® ma anche la propria idea di "didattica innovativa".
