@@ -1,10 +1,8 @@
 ---
-title: Prima lezione in DAD
-place: Online
-date: 2020-05-21
-imgPath: /assets/images/Prima-lezione-dad.jpg
+title: Pazienti del Regina Margherita al Poli
+place: Politecnico di Torino
+date: 2020-01-11
+imgPath: /assets/images/pazienti-regina-margherita.jpg
 showCMS: true
 ---
-
-Per fronteggiare la pandemia il team non ha perso tempo!
-Abbiamo convertito l'intera attività in un format adatto all'esecuzione da remoto, composta da quiz, sondaggi e presentazioni interattive, e siamo stati così efficienti da riuscire già per fine Maggio a programmare videoconferenze online con ben 3 classi. Riuscire a trasmettere ai ragazzi i concetti alla base della nostra attività nonostante le circostanze, ci ha riempito di soddisfazione e ci ha spronato a proseguire il nostro progetto con ancor più motivazione.
+Il team partecipa all'evento "Pazienti del Regina Margherita al Poli", durante il quale i pazienti del centro oncologico delle Molinette hanno avuto modo di visitare il Politecnico e vedere i nostri modelli in azione.
