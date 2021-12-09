@@ -1,5 +1,5 @@
 ---
-title: Modelli sismici
+title: Modello sismico
 icon: flaticon-earthquake
 imgPath: /assets/images/photo_2020-11-26_12-19-37.jpg
 showCMS: true
