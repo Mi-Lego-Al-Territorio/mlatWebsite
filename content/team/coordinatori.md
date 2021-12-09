@@ -1,5 +1,5 @@
 ---
-title: coordinatori
+title: I nostri membri
 icon: flaticon-team
 end: true
 members:
