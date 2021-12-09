@@ -1,7 +1,7 @@
 ---
 title: Modello sismico
 icon: flaticon-earthquake
-imgPath: /assets/images/photo_2020-11-26_12-19-37.jpg
+imgPath: /assets/images/modello-sismico.png
 showCMS: true
 ---
 Il **modello sismico** nasce con lo scopo di mostrare a bambini e ragazzi come si comportano gli edifici durante un terremoto.\
