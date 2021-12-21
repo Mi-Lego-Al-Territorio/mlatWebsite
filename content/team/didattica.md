@@ -1,15 +1,7 @@
 ---
 title: didattica
 icon: flaticon-education
-members:
-  - name: Julia Zanutto
-  - name: Stephanie Gyppaz
-  - name: Giorgia de Santis
-  - name: Alice Greco
-  - name: Giorgio Greco
-  - name: Micaela De Santis
-  - name: Francesca Vecchi
-  - name: Giulia Di Vinci
+members: []
 showCMS: true
 ---
 
