@@ -17,6 +17,14 @@ members:
     link: https://www.linkedin.com/in/ruggericlaudia/
   - name: Stefania Santoro
     link: https://www.instagram.com/stefaniasantoro_/
+  - name: Chiara Colosseo
+    link: https://www.instagram.com/chiaraco01/
+  - name: Simone Candido
+    link: https://www.linkedin.com/in/simone-candido-53b696146
+  - name: Emaan Khan
+    link: https://www.linkedin.com/in/emaan-khan-590247199
+  - name: Claudio Antonelli Perino
+    link: https://www.linkedin.com/in/claudio-antonelli-perino-31091021b
 showCMS: true
 ---
 
