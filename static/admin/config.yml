@@ -182,6 +182,9 @@ collections:
               ]
             required: false
         required: true
+      - label: Descrizione
+        name: body
+        widget: markdown
       - label: Mostra nel CMS
         name: showCMS
         widget: hidden
