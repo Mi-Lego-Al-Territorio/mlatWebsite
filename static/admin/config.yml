@@ -171,6 +171,7 @@ collections:
           - label: Nome
             name: name
             widget: string
+            required: true
           - label: Link
             name: link
             widget: string
@@ -179,6 +180,7 @@ collections:
                 'https?:\/\/www\.[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/\/=]*)',
                 Non è un link,
               ]
+            required: false
         required: true
       - label: Mostra nel CMS
         name: showCMS
