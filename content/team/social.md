@@ -11,4 +11,4 @@ members:
   - name: Dogukan Demir
 showCMS: true
 ---
-Realizza i contenuti multimediali e si occupa della comunicazione digitale del team.
+Realizza i contenuti social e si occupa della comunicazione digitale del team.
