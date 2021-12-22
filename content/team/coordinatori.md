@@ -1,6 +1,6 @@
 ---
 title: Informatica
-icon: computer
+icon: flaticon-computer
 end: true
 members:
   - name: Gabriele Filaferro
