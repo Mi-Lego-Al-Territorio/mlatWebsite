@@ -1,0 +1,17 @@
+{{ define "content"}}
+
+<div class="contacts" >
+  {{ with .Param "mails"}} Vuoi sapere di più su quello che facciamo?
+Scrivici a &nbsp;<a href="mailto:{{.info}}" target="_blank">{{.info}}</a>
+{{end}}
+<br/>
+<br/>
+Puoi trovarci sui nostri canali social:
+<div class="contacts-socials" >
+  {{with .Param "socials" }}{{range .}}<a href="{{.link}}" target="_blank"
+    ><i class="{{.icon}}"></i></a
+  >{{end}}{{end}}
+
+</divs>
+</div>
+{{end}}
