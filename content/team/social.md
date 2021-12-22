@@ -1,5 +1,5 @@
 ---
-title: Social & Multimedia
+title: Social
 icon: flaticon-share
 members:
   - name: Erica Forti
