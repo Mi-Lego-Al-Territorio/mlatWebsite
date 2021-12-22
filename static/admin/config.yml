@@ -21,13 +21,6 @@ collections:
     label: Generale
     description: Configurazione elementi particolari
     files:
-      - label: Chi siamo
-        name: about
-        file: content/_index.md
-        fields:
-          - label: Chi siamo
-            name: body
-            widget: markdown
       - label: Motto e socials
         name: params
         file: config/_default/params.yaml
@@ -45,6 +38,29 @@ collections:
               - label: Link alla pagina social
                 name: link
                 widget: string
+  - name: home
+    label: Home
+    folder: content/home
+    create: true
+    slug: '{{slug}}'
+    description: Le info sulla homepage
+    preview_path: ""
+    filter:
+      field: showCMS
+      value: true
+    fields:
+      - label: Titolo
+        name: title
+        widget: string
+        required: true
+      - label: Descrizione
+        name: body
+        widget: markdown
+        required: true
+      - label: Mostra nel CMS
+        name: showCMS
+        widget: hidden
+        default: true
   - name: eventi
     label: Eventi
     folder: content/eventi

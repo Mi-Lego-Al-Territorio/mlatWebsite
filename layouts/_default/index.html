@@ -5,8 +5,12 @@
     <img class="logo" src="logo.svg" />
     <p id="motto">{{ with .Param "motto"}}{{.}}{{end}}
 </p>
-    <h2>CHI SIAMO</h2>
+  {{ $homePage := .Site.GetPage "/home"}}
+  {{ range $homePage.Resources}}
+
+    <h2>{{.Title}}</h2>
     {{ .Content }}
+  {{end}}
 
     <div class="home-imgs">
       <!--  prettier-ignore -->
