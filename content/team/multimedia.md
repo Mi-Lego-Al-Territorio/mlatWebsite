@@ -1,6 +1,6 @@
 ---
 title: Multimedia
-icon: multimedia
+icon: flaticon-video-camera
 members:
   - name: Erica Forti
     link: https://www.linkedin.com/in/erica-forti-b24683225/
