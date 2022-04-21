@@ -13,9 +13,9 @@ members:
   - name: Giorgia De Santis
   - name: Giorgio Greco
   - name: Stephanie Gyppaz
-  - name: Micaela De Santis
   - name: Francesca Vecchi
   - name: Giulia Di Vinci
+  - name: Genny Sanzone
 showCMS: true
 ---
 Realizza i contenuti didattici del team: lezioni interattive, giochi e quiz per tutte le età.
