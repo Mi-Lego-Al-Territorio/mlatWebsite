@@ -5,12 +5,9 @@ socials:
   instagram:
     icon: fab fa-instagram
     link: https://www.instagram.com/milego_al_territorio/
-  facebook:
-    icon: fab fa-facebook-square
-    link: https://www.facebook.com/milegoalterritorio/
-  twitter:
-    icon: fab fa-twitter-square
-    link: https://twitter.com/lego_polito
   linkedin:
     icon: fab fa-linkedin
     link: https://www.linkedin.com/company/mi-lego-al-territorio/
+  twitter:
+    icon: fab fa-twitter-square
+    link: https://twitter.com/lego_polito
