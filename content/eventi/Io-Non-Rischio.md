@@ -1,5 +1,5 @@
 ---
-title: Io Non Rischio
+title: Io Non Rischio 2019
 place: Vecchiano (PI)
 date: 2019-10-13
 imgPath: /assets/images/Vecchiano-2019.jpg
