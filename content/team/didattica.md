@@ -9,13 +9,13 @@ members:
     link: https://www.linkedin.com/in/ruggericlaudia/
   - name: Erica Forti
     link: https://www.linkedin.com/in/erica-forti-b24683225/
-  - name: Alice Greco
-  - name: Giorgia De Santis
+  - name: Ana Carla Parosu
   - name: Giorgio Greco
   - name: Stephanie Gyppaz
-  - name: Francesca Vecchi
-  - name: Giulia Di Vinci
-  - name: Genny Sanzone
+  - name: Francesca Cantonati
+  - name: Alessia Franco
+  - name: Alessia Amendola
+  - name: Gianmarco Foni
 showCMS: true
 ---
 Realizza i contenuti didattici del team: lezioni interattive, giochi e quiz per tutte le età.
