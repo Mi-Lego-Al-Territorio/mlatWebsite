@@ -7,6 +7,7 @@ members:
   - name: Stefania Santoro
   - name: Chiara Colosseo
   - name: Ana Carla Parosu
+    link: https://www.linkedin.com/in/anna-parosu01
 showCMS: true
 ---
 Realizza i contenuti social e si occupa della comunicazione digitale del team.
