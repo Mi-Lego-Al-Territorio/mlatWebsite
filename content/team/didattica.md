@@ -10,6 +10,7 @@ members:
   - name: Erica Forti
     link: https://www.linkedin.com/in/erica-forti-b24683225/
   - name: Ana Carla Parosu
+    link: https://www.linkedin.com/in/anna-parosu01
   - name: Giorgio Greco
   - name: Stephanie Gyppaz
   - name: Francesca Cantonati
