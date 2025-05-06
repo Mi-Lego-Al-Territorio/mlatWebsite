@@ -2,7 +2,7 @@
 title: Modelli
 icon: flaticon-flood
 members:
-  - name: Deniz Andac
+  - name: Deniz Andaç
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
   - name: Gian Marco Liuzzi
   - name: Marco Cum
