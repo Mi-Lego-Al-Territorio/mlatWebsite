@@ -18,4 +18,4 @@ members:
   - name: Sofia Marziantonio
 showCMS: true
 ---
-Progetta e realizza i modelli idraulici e si occupa della simulazione di fenomeni idrogeologici.
+Nel nostro team di modelli, progettiamo e costruiamo nuovi modelli e manuteniamo e rinnoviamo quelli vecchi. I nostri modelli più recenti e più utilizzati sono disponibili **[qui](https://www.milegoalterritorio.it/progetti/).**
