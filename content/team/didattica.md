@@ -1,5 +1,5 @@
 ---
-title: TURCHI
+title: Didattica
 icon: flaticon-education
 members:
   - name: Fabio Carlacchiani
