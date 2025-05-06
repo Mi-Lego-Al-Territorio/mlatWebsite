@@ -1,24 +1,19 @@
 ---
-title: TURCHI
+title: Didattica
 icon: flaticon-education
 members:
-  - name: Fabio Carlacchiani
-    link: https://www.linkedin.com/in/fabio-carlacchiani/
-  - name: Julia Zanutto
-  - name: Claudia Ruggeri
-    link: https://www.linkedin.com/in/ruggericlaudia/
-  - name: Erica Forti
-    link: https://www.linkedin.com/in/erica-forti-b24683225/
-  - name: Ana Carla Parosu
-    link: https://www.linkedin.com/in/anna-parosu01
-  - name: Giorgio Greco
-  - name: Stephanie Gyppaz
-  - name: Francesca Cantonati
-  - name: Alessia Franco
-  - name: Alessia Amendola
-  - name: Gianmarco Foni
+  - name: Serena Falcone
+    link: https://www.linkedin.com/in/serena-falcone-295b4a282/
+  - name: Cristiano Sollazzo
+    link: https://www.linkedin.com/in/cristiano-sollazzo/
+  - name: Pietro Allosia
+    link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
+  - name: Sergio Manduca
+  - name: "Gian Marco Liuzzi  "
+  - name: Deniz Andaç
+    link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
 showCMS: true
 ---
-Realizza i contenuti didattici del team: lezioni interattive, giochi e quiz per tutte le età.
+Nel nostro team del didattica, creiamo e aggiorniamo le slide e i materiali utilizzati per le nostre lezioni e andiamo in missioni per aumentare la consapevolezza le persone di tutte le età di tutte le età sui disastri naturali. Le nostre missioni si svolgono principalmente presso scuole e in occasione di eventi Lego. 
 
-C﻿IAOOOOO
+**[Clicca qui per maggiori informazioni sui nostri metodi di insegnamento](https://www.milegoalterritorio.it/didattica/)** e **[qui per i nostri eventi più recenti](https://www.milegoalterritorio.it/eventi/)**
