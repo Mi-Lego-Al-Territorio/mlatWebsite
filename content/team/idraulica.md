@@ -11,6 +11,7 @@ members:
   - name: Koray Koruyucu
     link: https://www.linkedin.com/in/koray-koruyucu-9646b4215/
   - name: Sergio Manduca
+    link: https://www.linkedin.com/in/sergio-manduca-8514a0319/
   - name: Pietro Allosia
     link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
   - name: Wu Yiying
