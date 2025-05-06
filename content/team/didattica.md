@@ -9,6 +9,7 @@ members:
   - name: Pietro Allosia
     link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
   - name: Sergio Manduca
+    link: https://www.linkedin.com/in/sergio-manduca-8514a0319/
   - name: "Gian Marco Liuzzi  "
   - name: Deniz Andaç
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
