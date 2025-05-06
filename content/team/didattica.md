@@ -20,5 +20,3 @@ members:
 showCMS: true
 ---
 Realizza i contenuti didattici del team: lezioni interattive, giochi e quiz per tutte le età.
-
-C﻿IAOOOOO
