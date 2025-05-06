@@ -1,7 +1,7 @@
 ---
 title: Modello Sismico
 icon: flaticon-earthquake
-imgPath: /assets/images/sismico.jpg
+imgPath: /assets/images/sismic5o_.png
 showCMS: true
 ---
 Il nostro **modello sismico** è stato progettato e costruito dal nostro team di modelli per mostrare il comportamento delle strutture durante un terremoto.
