@@ -2,12 +2,14 @@
 title: Social
 icon: flaticon-share
 members:
-  - name: Erica Forti
-    link: https://www.linkedin.com/in/erica-forti-b24683225/
-  - name: Stefania Santoro
-  - name: Chiara Colosseo
   - name: Ana Carla Parosu
     link: https://www.linkedin.com/in/anna-parosu01
+  - name: Deniz Andac
+    link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
+  - name: Serena Falcone
+    link: https://www.linkedin.com/in/serena-falcone-295b4a282/
+  - link: https://www.linkedin.com/in/koray-koruyucu-9646b4215/
+    name: Koray Koruyucu
 showCMS: true
 ---
-Realizza i contenuti social e si occupa della comunicazione digitale del team.
+Nel nostro team Social, ci occupiamo della manutenzione, dell'aggiornamento e della creazione di nuovi post per i nostri account social. Potete trovarci su **[YouTube](https://www.youtube.com/@MiLegoalTerritorio)**, **[Instagram](https://www.instagram.com/milego_al_territorio/)** e **[Linkedin](https://www.linkedin.com/company/mi-lego-al-territorio/?viewAsMember=true)**
