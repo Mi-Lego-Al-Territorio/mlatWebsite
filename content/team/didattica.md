@@ -14,4 +14,6 @@ members:
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
 showCMS: true
 ---
-Realizza i contenuti didattici del team: lezioni interattive, giochi e quiz per tutte le età.
+Nel nostro team del didattica, creiamo e aggiorniamo le slide e i materiali utilizzati per le nostre lezioni e andiamo in missioni per aumentare la consapevolezza le persone di tutte le età di tutte le età sui disastri naturali. Le nostre missioni si svolgono principalmente presso scuole e in occasione di eventi Lego. 
+
+**[Clicca qui per maggiori informazioni sui nostri metodi di insegnamento](https://www.milegoalterritorio.it/didattica/)** e **[qui per i nostri eventi più recenti](https://www.milegoalterritorio.it/eventi/)**
