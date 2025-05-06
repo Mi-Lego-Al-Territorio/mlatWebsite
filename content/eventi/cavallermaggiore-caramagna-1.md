@@ -1,7 +1,7 @@
 ---
-title: Cavallermaggiore e Caramagna
-place: Cavallermaggiore e Caramagna
+title: Cavallermaggiore & Caramagna
+place: Cavallermaggiore & Caramagna
 date: 2025-03-17
-imgPath: /assets/images/img_3591.jpg
+imgPath: /assets/images/img_2835.jpg
 ---
 d﻿a scrivere
