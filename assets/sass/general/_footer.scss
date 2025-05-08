@@ -1,7 +1,7 @@
 footer {
   @include main-common();
   height: $footer-height;
-  background-color: #3A52A1;
+  background-color: $color-fill;
   display: flex;
   justify-content: space-between;
   align-items: center;
