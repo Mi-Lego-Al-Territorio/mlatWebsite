@@ -1,6 +1,6 @@
 ---
 title: Modelli
-icon: flaticon-lego
+icon: flaticon-shapes-and-symbols
 members:
   - name: Deniz Andac
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
