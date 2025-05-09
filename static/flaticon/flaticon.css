@@ -78,3 +78,6 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-computer:before {
     content: "\f114";
 }
+.flaticon-lego:before {
+    content: "\f115";
+}
