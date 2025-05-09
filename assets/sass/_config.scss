@@ -1,5 +1,5 @@
 :root {
-  --color-title: #3a52a1;
+  --color-title: #ff00d9;
   // light theme
   --color-bkg: #ffffff;
   --color-fill: #3a52a1;
@@ -14,7 +14,7 @@
 [data-theme='dark'] {
   :root {
     --color-bkg: #FF0000;
-    --color-title: #e84040;
+    --color-title: #ff00d9;
     --color-fill: #607fdd;
     --color-fill-light: lighten($color-fill, 20%);
     --color-text: #e4e4e4;
