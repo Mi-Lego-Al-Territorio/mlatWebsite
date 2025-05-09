@@ -2,7 +2,7 @@
 title: Modelli
 icon: flaticon-shapes-and-symbols
 members:
-  - name: Deniz Andac
+  - name: Deniz Andaç
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
   - name: Gian Marco Liuzzi
   - name: Marco Cum
@@ -14,11 +14,13 @@ members:
     link: https://www.linkedin.com/in/sergio-manduca-8514a0319/
   - name: Pietro Allosia
     link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
-  - name: Wu Yiying 吴依颖
+  - name: Wu Yiying [吴依颖]
+    link: https://www.linkedin.com/in/yiying-wu-834a25364/
   - name: Amin Zekavati Ahmadabad
   - name: Sofia Marziantonio
+    link: https://www.linkedin.com/in/sofia-marziantonio-31506230a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
   - name: Sofia Li Calzi
-  - name: Amina Tussupova Амина Тусупова
+  - name: Amina Tussupova [Амина Тусупова]
 showCMS: true
 ---
 Nel nostro team di modelli, progettiamo e costruiamo nuovi modelli e manuteniamo e rinnoviamo quelli vecchi. I nostri modelli più recenti e più utilizzati sono disponibili **[qui](https://www.milegoalterritorio.it/progetti/).**
