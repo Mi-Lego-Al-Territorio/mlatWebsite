@@ -46,6 +46,9 @@ $flaticon-map: (
 .flaticon-flood:before {
     content: map-get($flaticon-map, "flood");
 }
+.flaticon-lego:before {
+    content: map-get($flaticon-map, "lego");
+}
 .flaticon-earthquake:before {
     content: map-get($flaticon-map, "earthquake");
 }
