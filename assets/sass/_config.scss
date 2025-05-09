@@ -1,29 +1,14 @@
 :root {
-  --color-title: #3A53A0;
+  --color-title: #b22d1e;
   // light theme
   --color-bkg: #ffffff;
-  --color-fill: #00ff08;
+  --color-fill: #3A53A0;
   --color-fill-light: #fbd16e;
   --color-text: #292929;
-  --color-link: #003ffc;
+  --color-link: #292929;
   --menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
   --header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.25);
   --event-card-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.25);
-  // dark theme for fun
-}
-[data-theme='dark'] {
-  :root {
-    --color-bkg: #FF0000;
-    --color-title: #3A53A0;
-    --color-fill: #607fdd;
-    --color-fill-light: lighten($color-fill, 20%);
-    --color-text: #e4e4e4;
-    --color-link: #f8b10b;
-    --menu-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-    --header-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.5);
-    --event-card-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.5);
-  }
-}
 
 $footer-height: 70px;
 $menu-icons-width: 65px;
