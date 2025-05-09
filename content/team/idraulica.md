@@ -14,11 +14,11 @@ members:
     link: https://www.linkedin.com/in/sergio-manduca-8514a0319/
   - name: Pietro Allosia
     link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
-  - name: Wu Yiying [吴依颖]
+  - name: Wu Yiying 吴依颖
   - name: Amin Zekavati Ahmadabad
   - name: Sofia Marziantonio
   - name: Sofia Li Calzi
-  - name: Amina Tussupova [Амина Тусупова]
+  - name: Amina Tussupova Амина Тусупова
 showCMS: true
 ---
 Nel nostro team di modelli, progettiamo e costruiamo nuovi modelli e manuteniamo e rinnoviamo quelli vecchi. I nostri modelli più recenti e più utilizzati sono disponibili **[qui](https://www.milegoalterritorio.it/progetti/).**
