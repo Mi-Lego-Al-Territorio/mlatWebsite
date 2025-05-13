@@ -1,9 +1,7 @@
 ---
-title: Modello idraulico
+title: Modello Idraulico
 icon: flaticon-flood
-imgPath: /assets/images/photo_2020-11-26_11-14-50-2-.jpg
+imgPath: /assets/images/untitled-1.png
 showCMS: true
 ---
-Il **modello idraulico** rappresenta un **bacino idrografico** ed è nato nel 2018 con lo scopo di visualizzare, in scala ridotta, quei fenomeni idrogeologici che avvengono in natura e che possono costituire un rischio per l’ambiente e la popolazione, come ad esempio gli alluvioni o le frane. Viene utilizzato durante le lezioni e le attività didattiche per bambini e ragazzi, che possono agire direttamente sul modello, aggiungendo, modificando e costruendo edifici, dighe, ponti e argini per osservare l’impatto che questi hanno sul territorio, rendendo le lezioni interattive.\
-La caratteristica più interessante del modello è che su di esso scorre acqua vera e questo permette di mostrare, con un ottimo grado di realismo, ciò che avviene nelle zone limitrofe ai corsi d’acqua catturando l’attenzione degli interlocutori.\
-È composto da circa 12.000 mattoncini LEGO®, le sue dimensioni sono di 120x150x60 cm e pesa più di 24 kg!
+**Il modello idraulico** è stato creato nel 2018 di visualizzare al pubblico gli effetti dei fenomeni idrogeologici che si verificano in natura e che possono costituire un rischio per l'ambiente e la popolazione, come alluvioni o frane. Viene utilizzato durante le lezioni e le attività didattiche. Permettiamo ai nostri piccoli amici di costruire edifici, case, città, ponti e qualsiasi cosa gli venga in mente. Poi aumentiamo la potenza della nostra pompa, vediamo cosa succede al nostro modello e alle costruzioni e ne discutiamo, rendendo le lezioni ancora più interattive. L'uso di acqua rende il modello ancora più realistico e, grazie alla capacità dei pezzi Lego di trattenere l'acqua, i nostri piccoli amici possono modificare il modello per costruire muri che la trattengano. Questo modello è composto da circa 12.000 pezzi Lego, le sue dimensioni sono 120x150x60 cm e pesa più di 24 kg!
