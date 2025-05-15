@@ -21,6 +21,10 @@ members:
     link: https://www.linkedin.com/in/sofia-marziantonio-31506230a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
   - name: Sofia Li Calzi
   - name: Amina Tussupova [Амина Тусупова]
+  - name: Doğa Akpullukcu
+    link: https://www.linkedin.com/in/do%C4%9Fa-akpullukcu-764128326/
+  - name: Mehdi Rizq
+    link: https://www.linkedin.com/in/mehdi-rizq-6725841b3/
 showCMS: true
 ---
 Nel nostro team di modelli, progettiamo e costruiamo nuovi modelli e manuteniamo e rinnoviamo quelli vecchi. I nostri modelli più recenti e più utilizzati sono disponibili **[qui](https://www.milegoalterritorio.it/progetti/).**
