@@ -33,6 +33,8 @@ members:
     link: https://www.linkedin.com/in/pooya-r-a93ab417a/
   - name: Odys Thakur
   - name: Barış Kuzey Urhan
+  - name: Matteo Vellei
+    link: https://www.linkedin.com/in/matteovellei/
 showCMS: true
 ---
 Nel nostro team di modelli, progettiamo e costruiamo nuovi modelli e manuteniamo e rinnoviamo quelli vecchi. I nostri modelli più recenti e più utilizzati sono disponibili **[qui](https://www.milegoalterritorio.it/progetti/).**
