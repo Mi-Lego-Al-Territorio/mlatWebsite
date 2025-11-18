@@ -27,7 +27,7 @@ members:
   - name: Paola Masciulli
     link: https://www.linkedin.com/in/paola-masciulli-876459384/
   - name: Alara Altay
-  - name: Thomas Ye
+  - name: Thomas Ye [叶安顺]
     link: https://www.linkedin.com/in/thomas-ye-937b50216/
   - name: Pooya Rashgi Shishvan
     link: https://www.linkedin.com/in/pooya-r-a93ab417a/
