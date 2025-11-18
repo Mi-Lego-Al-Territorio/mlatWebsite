@@ -19,7 +19,7 @@ members:
   - name: Sofia Marziantonio
     link: https://www.linkedin.com/in/sofia-marziantonio-31506230a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
   - name: Sofia Li Calzi
-  - name: Thomas Ye [叶安顺]
+  - name: Thomas Ye (叶安顺)
     link: https://www.linkedin.com/in/thomas-ye-937b50216/
   - name: Camilla Galbardi
   - name: Maria Vittoria Grana
