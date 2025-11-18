@@ -10,6 +10,8 @@ members:
     link: https://www.linkedin.com/in/serena-falcone-295b4a282/
   - link: https://www.linkedin.com/in/koray-koruyucu-9646b4215/
     name: Koray Koruyucu
+  - name: Matteo Vellei
+    link: https://www.linkedin.com/in/matteovellei/
 showCMS: true
 ---
 Nel nostro team Social, ci occupiamo della manutenzione, dell'aggiornamento e della creazione di nuovi post per i nostri account social. Potete trovarci su **[YouTube](https://www.youtube.com/@MiLegoalTerritorio)**, **[Instagram](https://www.instagram.com/milego_al_territorio/)** e **[Linkedin](https://www.linkedin.com/company/mi-lego-al-territorio/?viewAsMember=true)**
