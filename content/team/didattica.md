@@ -13,6 +13,20 @@ members:
   - name: "Gian Marco Liuzzi  "
   - name: Deniz Andaç
     link: https://www.linkedin.com/in/deniz-anda%C3%A7-063a611b7/
+  - name: Alessandro Zecchino
+  - name: Paola Masciulli
+    link: https://www.linkedin.com/in/paola-masciulli-876459384/
+  - name: Sofia Marziantonio
+    link: https://www.linkedin.com/in/sofia-marziantonio-31506230a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+  - name: Sofia Li Calzi
+  - name: Thomas Ye
+    link: https://www.linkedin.com/in/thomas-ye-937b50216/
+  - name: Camilla Galbardi
+  - name: Maria Vittoria Grana
+  - name: Pietro Allosia
+    link: https://www.linkedin.com/in/pietro-allosia-6196b6356/
+  - name: Michele Sauro
+  - name: Andrea Chen
 showCMS: true
 ---
 <!--StartFragment-->
