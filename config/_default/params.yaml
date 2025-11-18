@@ -5,9 +5,12 @@ socials:
   instagram:
     icon: fab fa-instagram
     link: https://www.instagram.com/milego_al_territorio/
-  linkedin:
-    icon: fab fa-linkedin
-    link: https://www.linkedin.com/company/mi-lego-al-territorio/
+  youtube:
+    icon: fab fa-youtube
+    link: https://www.youtube.com/@MiLegoalTerritorio
   tiktok:
     icon: fab fa-tiktok
     link: https://www.tiktok.com/@milegoalterritorio?lang=en
+  linkedin:
+    icon: fab fa-linkedin
+    link: https://www.linkedin.com/company/mi-lego-al-territorio/
