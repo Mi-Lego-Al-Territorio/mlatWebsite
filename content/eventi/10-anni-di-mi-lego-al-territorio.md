@@ -5,4 +5,16 @@ date: 2025-05-30
 imgPath: /assets/images/dsc08705.jpg
 showCMS: true
 ---
-Anche se sembra che sia ieri, sono **10 anni** che facciamo lezioni, missioni e costruiamo! Naturalmente, non potevamo non festeggiare con i nostri vecchi membri e i professori che ci hanno aiutato fin dall'inizio. Grazie a tutti coloro che hanno partecipato, ci hanno ospitato, ci hanno ascoltato e hanno giocato con noi. **Brindiamo ad altri 10 anni**
+**1﻿0 anni di divulgazione, un mattoncino alla volta!**
+
+<!--StartFragment-->
+
+Dieci anni fa è iniziato un percorso fatto di lezioni, missioni e costruzioni.\
+
+Per celebrare questo importante anniversario abbiamo organizzato una giornata speciale in cui raccontare la nostra storia attraverso tutti i modelli realizzati in questi anni e festaggiare insieme ai nostri ex-membri, ai professori e a chi ci ha accompagnato fin dall’inizio.
+
+L’evento ha visto la partecipazione di numerose realtà e associazioni, tra cui \*\*LARES\*\* e \*\*Psicologi per i Popoli Torino\*\*, oltre a rappresentanti dell’\*\*Università di Firenze\*\*, del \*\*Politecnico di Milano\*\* e dell’\*\*Università di Bologna\*\*.
+
+\*\*Grazie a tutti coloro che hanno condiviso questo viaggio con noi. Brindiamo ai prossimi 10 anni!\*\* 🥂
+
+<!--EndFragment-->
